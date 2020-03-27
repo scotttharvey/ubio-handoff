@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/clearlink/ubio-att/issues"
   },
-  "homepage": "https://github.com/clearlink/ubio-att#readme"
+  "homepage": "https://github.com/clearlink/ubio-att#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3",
+    "tailwindcss": "^1.2.0"
+  }
 }
