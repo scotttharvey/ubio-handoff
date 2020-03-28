@@ -9,55 +9,48 @@
 </head>
 
 <body>
-  <div class="row">
 
-    <!-- FIRST SCREEN -->
-    <section>
-      <div class="bg-white rounded-lg p-6">
-        <div>
-          <h2>Scotch Harvey</h2>
-          <div>Total Boy Man</div>
-          <div>bluddy@example.com
+  <nav>nav</nav>
 
-          </div>
-          <div>(555) 765-4321</div>
-        </div>
+
+
+  <!-- FIRST SCREEN -->
+  <div class="container bg-gray-light">
+    <div class="row">
+      <div class="half-width">
+        <h1 class="font-bold">Let’s see what packages are available in your area.</h1>
+
+        <form action="">
+          <label for="address">
+            Street Address*
+            <input name="address" type="text"/>
+          </label>
+
+          <label for="apt">
+            Apt./Suite/Bldg.
+            <input name="apt" type="text"/>
+          </label>
+
+          <label for="zip">
+            Zip Code*
+            <input name="zip" type="text"/>
+          </label>
+          <input type="submit" value="See Packages"/>
+        </form>
+
       </div>
 
-      <input
-        class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-        type="email" placeholder="jane@example.com">
-
-      <button class="btn btn-blue">
-        Button
-      </button>
-    </section>
-
-
-    <!-- SECOND SCREEN -->
-    <section>
-      <div class="bg-white rounded-lg p-6">
-        <div>
-          <h2>Scotch Harvey</h2>
-          <div>Total Boy Man</div>
-          <div>bluddy@example.com
-
-          </div>
-          <div>(555) 765-4321</div>
-        </div>
-      </div>
-
-      <input
-        class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-        type="email" placeholder="jane@example.com">
-
-      <button class="btn btn-blue">
-        Button
-      </button>
-    </section>
-
-
+    </div>
   </div>
+
+  <div>
+    <form action="">
+      <label for="ssn">SSN</label>
+      <input type="text" name="ssn" placeholder="SSN" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" />
+    </form>
+  </div>
+
+  <footer>footer</footer>
 </body>
 
 </html>

@@ -1,0 +1,110 @@
+// ========================================
+// Margin Classes
+// ========================================
+.margin-top-15 { margin-top: 15px; }
+.margin-top-25 { margin-top: 25px; }
+.margin-top-30 { margin-top: 30px; }
+.margin-top-45 { margin-top: 45px; }
+.margin-bottom-0 { margin-bottom: 0; }
+.margin-bottom-5 { margin-bottom: 5px; }
+.margin-bottom-15 { margin-bottom: 15px; }
+.margin-bottom-25 { margin-bottom: 25px; }
+.margin-bottom-30 { margin-bottom: 30px; }
+.margin-bottom-35 { padding-bottom: 35px; }
+.margin-bottom-45 { margin-bottom: 45px; }
+.margin-bottom-60 { margin-bottom: 60px; }
+.margin-bottom-15-small { @include small { margin-bottom: 15px; } }
+.margin-bottom-30-medium-up { @include medium-up { margin-bottom: 30px; } }
+.margin-bottom-30-large-up { @include large-up { margin-bottom: 30px; } }
+
+// ========================================
+// Padding Classes
+// ========================================
+.padding-10 { padding: 10px; }
+.padding-top-15 { padding-top: 15px; }
+.padding-top-25 { padding-bottom: 25px; }
+.padding-top-30 { padding-top: 30px; }
+.padding-top-45 { padding-top: 45px; }
+.padding-top-60 { padding-top: 60px; }
+.padding-top-85 { padding-top: 85px; }
+.padding-bottom-15 { padding-bottom: 15px; }
+.padding-bottom-25 { padding-bottom: 25px; }
+.padding-bottom-30 { padding-bottom: 30px; }
+.padding-bottom-45 { padding-bottom: 45px; }
+
+// ========================================
+// Text Classes
+// ========================================
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center-medium-up { @include medium-up { text-align: center; } }
+.text-center-large-up { @include large-up { text-align: center; } }
+
+
+// ========================================
+// Font Color Classes
+// ========================================
+.black { color: $black; }
+.black-two { color: $black-two; }
+.white { color: $white; }
+.gray-darkest { color: $gray-darkest; }
+.gray-dark { color: $gray-dark; }
+.gray { color: $gray; }
+.gray-light { color: $gray-light; }
+.gray-lightest { color: $gray-lightest; }
+.blue-lightest { color: $blue-lightest; }
+.blue-light { color: $blue-light; }
+.blue { color: $blue; }
+.blue-dark { color: $blue-dark; }
+.pink { color: $pink; }
+.orange { color: $orange; }
+.green { color: $green; }
+.purple { color: $purple; }
+
+// ========================================
+// Background Color Classes
+// ========================================
+.bg-black { background-color: $black; }
+.bg-black-two { background-color: $black-two; }
+.bg-white { background-color: $white; }
+.bg-gray-darkest { background-color: $gray-darkest; }
+.bg-gray-dark { background-color: $gray-dark; }
+.bg-gray { background-color: $gray; }
+.bg-gray-light { background-color: $gray-light; }
+.bg-gray-lightest { background-color: $gray-lightest; }
+.bg-blue-lightest { background-color: $blue-lightest; }
+.bg-blue-light { background-color: $blue-light; }
+.bg-blue { background-color: $blue; }
+.bg-blue-dark { background-color: $blue-dark; }
+.bg-pink { background-color: $pink; }
+.bg-orange { background-color: $orange; }
+.bg-green { background-color: $green; }
+.bg-purple { background-color: $purple; }
+
+// ========================================
+// Font Weight Classes
+// ========================================
+.font-bold { font-weight: 700; }
+// .font-weight-semi-bold { font-family: $semi-bold-font; }
+// .font-weight-extra-bold { font-family: $extra-bold-font; }
+// .font-weight-regular { font-family: $regular-font; }
+
+// ========================================
+// Misc
+// ========================================
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-column-small { @include small { flex-direction: column; } }
+.flex-end { justify-content: flex-end; }
+.space-between { justify-content: space-between; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.relative { position: relative; }
+
+.btn-shadow { box-shadow: 0 2px 4px 0 rgba(56, 61, 67, 0.2); }
+.card-shadow { box-shadow: 0 4px 8px 0 rgba(56, 61, 67, 0.3); }
+
