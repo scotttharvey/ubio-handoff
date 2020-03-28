@@ -10,35 +10,96 @@
 
 <body>
 
-  <nav>nav</nav>
+  <nav class="bg-dark padding-vertical-30 white text-center"><h1>NAVIGATION</h1></nav>
 
 
 
-  <!-- FIRST SCREEN -->
+  <!-- SCREEN 1-A -->
+  <div class="row padding-vertical-25 text-center"><h3>SCREEN 1-A</h3></div>
   <div class="container bg-gray-light">
-    <div class="row">
-      <div class="half-width">
-        <h1 class="font-bold">Let’s see what packages are available in your area.</h1>
+    <div id="screen-1" class="row padding-vertical-30">
+      <section class="flex width-100">
 
-        <form action="">
-          <label for="address">
-            Street Address*
-            <input name="address" type="text"/>
-          </label>
+        <div class="width-50 padding-vertical-25 padding-horizontal-25">
+          <h1 class="h3 gray-darkest font-bold margin-bottom-25">Let’s see what packages are available in your area.</h1>
 
-          <label for="apt">
-            Apt./Suite/Bldg.
-            <input name="apt" type="text"/>
-          </label>
+          <form action="" class="flex flex-wrap space-between address-qual">
+            <div class="address flex-column width-100">
+              <label for="address">
+                Street Address*
+              </label>
+                <input id="address" name="address" type="text" />
+            </div>
 
-          <label for="zip">
-            Zip Code*
-            <input name="zip" type="text"/>
-          </label>
-          <input type="submit" value="See Packages"/>
-        </form>
+            <div class="apt flex-column width-48">
+              <label for="apt">
+                Apt./Suite/Bldg.
+              </label>
+                <input id="apt" name="apt" type="text"/>
+            </div>
 
-      </div>
+            <div class="zip flex-column width-48">
+              <label for="zip">
+                Zip Code*
+              </label>
+                <input id="zip" name="zip" type="text" pattern="[0-9]" maxlength="5" />
+            </div>
+
+            <input type="submit" value="See Packages" class="btn width-100 bg-blue-dark white" />
+          </form>
+          <p class="legal gray-darkest">*Required Field <br/> Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+
+        <div class="width-50">
+          <img src="./images/painter.png" alt="" class="max-width-100" />
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <!-- SCREEN 1-B -->
+  <div class="row padding-vertical-25 text-center"><h3>SCREEN 1-B</h3></div>
+  <div class="container bg-light">
+    <div id="screen-1" class="row padding-vertical-30">
+
+      <section class="flex width-100">
+
+        <div class="width-50 padding-vertical-25 padding-horizontal-25 gray-darkest">
+          <h1 class="h3 gray-darkest font-bold margin-bottom-15">Do you mean 300 Deer Branch Ln, Apt 4, Vacaville, CA 95688? </h1>
+          <p class="bold margin-bottom-25">You entered: 300 Beer Branch Ln, Apt 4, 95688</p>
+
+          <button class="btn bg-blue-dark width-100 white padding-vertical-15 padding-horizontal-25 margin-bottom-30">Yes, use suggestion</button>
+
+          <button class="btn bg-white btn-shadow padding-vertical-15 padding-horizontal-25">&Dagger; Back</button>
+        </div>
+
+        <div class="width-50">
+          <img src="./images/pale-fatal-error.png" alt="" class="max-width-100" />
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- SCREEN Error -->
+  <div class="row padding-vertical-25 text-center"><h3>SCREEN Error</h3></div>
+  <div class="container bg-white">
+    <div id="screen-1" class="row padding-vertical-30">
+
+      <section class="flex width-100">
+
+        <div class="width-50 padding-vertical-25 padding-horizontal-25 gray-darkest">
+          <h1 class="h3 gray-darkest font-bold margin-bottom-15">Ops, something went wrong.</h1>
+          <p>Don’t worry. You are in good hands.</p>
+          <p class="margin-bottom-25">Call or chat with one of our agents to finish setting up service for your home.</p>
+          <button class="btn bg-blue-dark white padding-vertical-15 padding-horizontal-25">Talk to an agent today &para; 888-888-8888</button>
+        </div>
+
+        <div class="width-50">
+          <img src="./images/flame-3.png" alt="" class="max-width-100" />
+        </div>
+      </section>
 
     </div>
   </div>
@@ -50,7 +111,7 @@
     </form>
   </div>
 
-  <footer>footer</footer>
+  <footer class="bg-dark padding-vertical-30 white text-center"><h1>Footer</h1></footer>
 </body>
 
 </html>
