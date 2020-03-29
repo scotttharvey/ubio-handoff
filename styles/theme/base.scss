@@ -5,6 +5,17 @@
   width: 100%
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .row {
   margin: 0 auto;
   max-width: 1200px;
