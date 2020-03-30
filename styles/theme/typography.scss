@@ -3,41 +3,42 @@
   font-style: normal;
   font-weight: 200;
   src: url("./../fonts/attaleckcd_lt.woff") format("woff"), url("./../fonts/attaleckcd_lt.ttf") format("truetype");
-  }
+}
 
-  @font-face {
+@font-face {
   font-family: aleckcd;
   font-style: normal;
   font-weight: 500;
-  src: url("./../fonts/attaleckcd_md.woff") format("woff"), url("./../fonts/attaleckcd_md.ttf") format("truetype"); }
+  src: url("./../fonts/attaleckcd_md.woff") format("woff"), url("./../fonts/attaleckcd_md.ttf") format("truetype");
+}
 
-  @font-face {
+@font-face {
   font-family: aleck;
   font-style: normal;
   font-weight: 200;
   src: url("./../fonts/attalecksans_lt.woff") format("woff"), url("./../fonts/attalecksans_lt.ttf") format("truetype");
-  }
+}
 
-  @font-face {
+@font-face {
   font-family: aleck;
   font-style: normal;
   font-weight: 400;
   src: url("./../fonts/attalecksans_rg.woff") format("woff"), url("./../fonts/attalecksans_rg.ttf") format("truetype");
-  }
+}
 
-  @font-face {
+@font-face {
   font-family: aleck;
   font-style: normal;
   font-weight: 500;
   src: url("./../fonts/attalecksans_md.woff") format("woff"), url("./../fonts/attalecksans_md.ttf") format("truetype");
-  }
+}
 
-  @font-face {
+@font-face {
   font-family: aleck;
   font-style: normal;
   font-weight: 700;
   src: url("./../fonts/attalecksans_bd.woff") format("woff"), url("./../fonts/attalecksans_bd.ttf") format("truetype");
-  }
+}
 
 $font-aleckcd: 'aleckcd', Helvetica, Arial, sans-serif;
 $font-aleck: 'aleck', Helvetica, Arial, sans-serif;
@@ -61,9 +62,9 @@ body {
 
 h1,
 .h1 {
-  font-family: $font-aleck-bold;
+  font-family: $font-aleck;
   font-size: 32px;
-  font-weight: 500;
+  // font-weight: 500;
   line-height: 32px;
 
   @include large-up {
