@@ -1,36 +1,36 @@
 // ========================================
 // Margin Classes
 // ========================================
-.margin-top-15 { margin-top: 15px; }
-.margin-top-25 { margin-top: 25px; }
-.margin-top-30 { margin-top: 30px; }
-.margin-top-45 { margin-top: 45px; }
-.margin-bottom-0 { margin-bottom: 0; }
-.margin-bottom-5 { margin-bottom: 5px; }
-.margin-bottom-15 { margin-bottom: 15px; }
-.margin-bottom-25 { margin-bottom: 25px; }
-.margin-bottom-30 { margin-bottom: 30px; }
-.margin-bottom-35 { margin-bottom: 35px; }
-.margin-bottom-45 { margin-bottom: 45px; }
-.margin-bottom-60 { margin-bottom: 60px; }
-.margin-bottom-15-small { @include small { margin-bottom: 15px; } }
-.margin-bottom-30-medium-up { @include medium-up { margin-bottom: 30px; } }
-.margin-bottom-30-large-up { @include large-up { margin-bottom: 30px; } }
+.m-t-15 { margin-top: 15px; }
+.m-t-25 { margin-top: 25px; }
+.m-t-30 { margin-top: 30px; }
+.m-t-45 { margin-top: 45px; }
+.m-b-0 { margin-bottom: 0; }
+.m-b-5 { margin-bottom: 5px; }
+.m-b-15 { margin-bottom: 15px; }
+.m-b-25 { margin-bottom: 25px; }
+.m-b-30 { margin-bottom: 30px; }
+.m-b-35 { margin-bottom: 35px; }
+.m-b-45 { margin-bottom: 45px; }
+.m-b-60 { margin-bottom: 60px; }
+.m-b-15-small { @include small { margin-bottom: 15px; } }
+.m-b-30-medium-up { @include medium-up { margin-bottom: 30px; } }
+.m-b-30-large-up { @include large-up { margin-bottom: 30px; } }
 
 // ========================================
 // Padding Classes
 // ========================================
-.padding-10 { padding: 10px; }
-.padding-top-15 { padding-top: 15px; }
-.padding-top-25 { padding-bottom: 25px; }
-.padding-top-30 { padding-top: 30px; }
-.padding-top-45 { padding-top: 45px; }
-.padding-top-60 { padding-top: 60px; }
-.padding-top-85 { padding-top: 85px; }
-.padding-bottom-15 { padding-bottom: 15px; }
-.padding-bottom-25 { padding-bottom: 25px; }
-.padding-bottom-30 { padding-bottom: 30px; }
-.padding-bottom-45 { padding-bottom: 45px; }
+.p-10 { padding: 10px; }
+.p-t-15 { padding-top: 15px; }
+.p-t-25 { padding-bottom: 25px; }
+.p-t-30 { padding-top: 30px; }
+.p-t-45 { padding-top: 45px; }
+.p-t-60 { padding-top: 60px; }
+.p-t-85 { padding-top: 85px; }
+.p-b-15 { padding-bottom: 15px; }
+.p-b-25 { padding-bottom: 25px; }
+.p-b-30 { padding-bottom: 30px; }
+.p-b-45 { padding-bottom: 45px; }
 
 .p-y-5 {
   padding-top: 5px;
