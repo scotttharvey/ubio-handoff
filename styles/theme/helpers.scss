@@ -87,6 +87,16 @@
   padding-left: 25px;
  }
 
+ .p-x-35 {
+  padding-right: 35px;
+  padding-left: 35px;
+ }
+
+ .p-x-45 {
+  padding-right: 45px;
+  padding-left: 45px;
+ }
+
 // ========================================
 // Text Classes
 // ========================================
@@ -149,8 +159,15 @@
 // ========================================
 // Font Weight Classes
 // ========================================
-.font-bold { font-weight: 700; }
-.font-thin { font-weight: 200; }
+.bold { font-weight: 700; }
+.thin { font-weight: 200; }
+.strike-out { text-decoration: line-through; }
+
+.legal {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 // .font-weight-semi-bold { font-family: $semi-bold-font; }
 // .font-weight-extra-bold { font-family: $extra-bold-font; }
 // .font-weight-regular { font-family: $regular-font; }
@@ -181,18 +198,18 @@
 .box-shadow { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 .blue-border { border: 1px solid $blue-light; }
 
-.width-auto { width: auto; }
-.width-100 { width: 100%; }
-.width-66 { width: 66%; }
-.width-60 { width: 60%; }
-.width-50 { width: 50%; }
-.width-48 { width: 48%; }
-.width-45 { width: 45%; }
-.width-40 { width: 40%; }
-.width-33 { width: 33%; }
-.width-30 { width: 30%; }
+.w-auto { width: auto; }
+.w-100 { width: 100%; }
+.w-66 { width: 66%; }
+.w-60 { width: 60%; }
+.w-50 { width: 50%; }
+.w-48 { width: 48%; }
+.w-45 { width: 45%; }
+.w-40 { width: 40%; }
+.w-33 { width: 33%; }
+.w-30 { width: 30%; }
 
-.max-width-100 { max-width: 100%; }
-.max-width-50 { max-width: 50%; }
-.max-width-40 { max-width: 40%; }
-.max-width-30 { max-width: 30%; }
+.max-w-100 { max-width: 100%; }
+.max-w-50 { max-width: 50%; }
+.max-w-40 { max-width: 40%; }
+.max-w-30 { max-width: 30%; }
