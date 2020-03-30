@@ -1,6 +1,7 @@
 // ========================================
 // Margin Classes
 // ========================================
+.m-0 { margin: 0; }
 .m-t-15 { margin-top: 15px; }
 .m-t-25 { margin-top: 25px; }
 .m-t-30 { margin-top: 30px; }
@@ -16,11 +17,15 @@
 .m-b-15-small { @include small { margin-bottom: 15px; } }
 .m-b-30-medium-up { @include medium-up { margin-bottom: 30px; } }
 .m-b-30-large-up { @include large-up { margin-bottom: 30px; } }
+.m-r-15 { margin-right: 15px; }
+.m-r-25 { margin-right: 25px; }
 
 // ========================================
 // Padding Classes
 // ========================================
 .p-10 { padding: 10px; }
+.p-15 { padding: 15px; }
+.p-25 { padding: 25px; }
 .p-t-15 { padding-top: 15px; }
 .p-t-25 { padding-bottom: 25px; }
 .p-t-30 { padding-top: 30px; }
@@ -72,9 +77,24 @@
   padding-left: 10px;
  }
 
+ .p-x-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+ }
+
  .p-x-25 {
   padding-right: 25px;
   padding-left: 25px;
+ }
+
+ .p-x-35 {
+  padding-right: 35px;
+  padding-left: 35px;
+ }
+
+ .p-x-45 {
+  padding-right: 45px;
+  padding-left: 45px;
  }
 
 // ========================================
@@ -85,6 +105,10 @@
 .text-left { text-align: left; }
 .text-center-medium-up { @include medium-up { text-align: center; } }
 .text-center-large-up { @include large-up { text-align: center; } }
+.text-18 {
+  font-size: 18px;
+  line-height: 24px;
+}
 .text-14 { font-size: 14px; }
 .text-12 { font-size: 12px; }
 .no-underline { text-decoration: none; }
@@ -135,7 +159,15 @@
 // ========================================
 // Font Weight Classes
 // ========================================
-.font-bold { font-weight: 700; }
+.bold { font-weight: 700; }
+.thin { font-weight: 200; }
+.strike-out { text-decoration: line-through; }
+
+.legal {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 // .font-weight-semi-bold { font-family: $semi-bold-font; }
 // .font-weight-extra-bold { font-family: $extra-bold-font; }
 // .font-weight-regular { font-family: $regular-font; }
@@ -164,14 +196,20 @@
 .btn-shadow { box-shadow: 0 2px 4px 0 rgba(56, 61, 67, 0.2); }
 .card-shadow { box-shadow: 0 4px 8px 0 rgba(56, 61, 67, 0.3); }
 .box-shadow { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+.blue-border { border: 1px solid $blue-light; }
 
-.width-100 { width: 100%; }
-.width-50 { width: 50%; }
-.width-48 { width: 48%; }
-.width-45 { width: 45%; }
-.width-30 { width: 30%; }
+.w-auto { width: auto; }
+.w-100 { width: 100%; }
+.w-66 { width: 66%; }
+.w-60 { width: 60%; }
+.w-50 { width: 50%; }
+.w-48 { width: 48%; }
+.w-45 { width: 45%; }
+.w-40 { width: 40%; }
+.w-33 { width: 33%; }
+.w-30 { width: 30%; }
 
-.max-width-100 { max-width: 100%; }
-.max-width-50 { max-width: 50%; }
-.max-width-40 { max-width: 40%; }
-.max-width-30 { width: 30%; }
+.max-w-100 { max-width: 100%; }
+.max-w-50 { max-width: 50%; }
+.max-w-40 { max-width: 40%; }
+.max-w-30 { max-width: 30%; }
