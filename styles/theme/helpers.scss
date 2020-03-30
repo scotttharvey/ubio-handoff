@@ -32,27 +32,47 @@
 .padding-bottom-30 { padding-bottom: 30px; }
 .padding-bottom-45 { padding-bottom: 45px; }
 
-.padding-vertical-15 {
+.p-y-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+ }
+
+.p-y-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+ }
+
+.p-y-15 {
   padding-top: 15px;
   padding-bottom: 15px;
  }
 
-.padding-vertical-25 {
+.p-y-25 {
   padding-top: 25px;
   padding-bottom: 25px;
  }
 
-.padding-vertical-30 {
+.p-y-30 {
   padding-top: 30px;
   padding-bottom: 30px;
  }
 
-.padding-vertical-45 {
+.p-y-45 {
   padding-top: 45px;
   padding-bottom: 45px;
  }
 
- .padding-horizontal-25 {
+ .p-x-5 {
+  padding-right: 5px;
+  padding-left: 5px;
+ }
+
+ .p-x-10 {
+  padding-right: 10px;
+  padding-left: 10px;
+ }
+
+ .p-x-25 {
   padding-right: 25px;
   padding-left: 25px;
  }
@@ -65,7 +85,9 @@
 .text-left { text-align: left; }
 .text-center-medium-up { @include medium-up { text-align: center; } }
 .text-center-large-up { @include large-up { text-align: center; } }
-
+.text-14 { font-size: 14px; }
+.text-12 { font-size: 12px; }
+.no-underline { text-decoration: none; }
 
 // ========================================
 // Font Color Classes
@@ -100,6 +122,7 @@
 .bg-gray { background-color: $gray; }
 .bg-gray-light { background-color: $gray-light; }
 .bg-gray-lightest { background-color: $gray-lightest; }
+.bg-blue-sky { background-color: $blue-sky; }
 .bg-blue-lightest { background-color: $blue-lightest; }
 .bg-blue-light { background-color: $blue-light; }
 .bg-blue { background-color: $blue; }
@@ -140,6 +163,7 @@
 
 .btn-shadow { box-shadow: 0 2px 4px 0 rgba(56, 61, 67, 0.2); }
 .card-shadow { box-shadow: 0 4px 8px 0 rgba(56, 61, 67, 0.3); }
+.box-shadow { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 
 .width-100 { width: 100%; }
 .width-50 { width: 50%; }
