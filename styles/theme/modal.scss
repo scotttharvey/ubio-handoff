@@ -1,8 +1,7 @@
 .modal {
-  display: none;
   position: fixed;
   z-index: 99;
-  padding-top: 100px;
+  padding-top: 25vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -16,7 +15,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid $gray-light;
-    width: 80%;
+    max-width: 720px;
   }
 
   .close {
