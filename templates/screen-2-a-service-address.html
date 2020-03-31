@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+
+  <!-- SCREEN 2-A -->
+  <div class="container bg-gray-light bg-family-hero">
+  <div id="screen-1" class="row p-y-30">
+    <section class="flex w-100">
+
+      <div class="w-50 md-down:w-100 p-y-25 p-x-25">
+        <h1 class="h3 gray-darkest bold m-b-25">Let’s see what packages are available in your area.</h1>
+
+        <form action="" class="flex flex-wrap space-between form-container">
+          <div class="address flex-column w-100">
+            <label for="address">
+              Street Address*
+            </label>
+              <input id="address" name="address" type="text" required />
+          </div>
+
+          <div class="apt flex-column w-48">
+            <label for="apt">
+              Apt./Suite/Bldg.
+            </label>
+              <input id="apt" name="apt" type="text" />
+          </div>
+
+          <div class="zip flex-column w-48">
+            <label for="zip">
+              Zip Code*
+            </label>
+              <input id="zip" name="zip" type="text" pattern="[0-9]{5}" maxlength="5" required />
+          </div>
+
+          <input type="submit" value="See Packages" class="btn w-100 bg-blue-dark white" />
+        </form>
+        <p class="legal gray-darkest">*Required Field <br/> Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+    </section>
+  </div>
+</div>
