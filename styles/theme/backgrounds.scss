@@ -24,3 +24,24 @@
 
   }
 }
+
+.bg-error-hero {
+
+  position: relative;
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/images/error.jpg');
+    @include medium-down {
+      display: none;
+    }
+
+  }
+}
