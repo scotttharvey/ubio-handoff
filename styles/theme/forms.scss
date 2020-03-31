@@ -36,6 +36,41 @@
         }
       }
     }
+
+    &.big-radio {
+      display: inline-flex;
+      cursor: pointer;
+      position: relative;
+
+      input {
+        height: 40px;
+        width: 40px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        border: 1px solid $blue-light;
+        border-radius: 20px;
+        outline: none;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        padding: 7px;
+
+
+        &:checked + .inputFill::before {
+          background-image: url('/images/icons/3a-selectproduct.svg');
+          width: 42px;
+          height: 42px;
+          content: '';
+          display: block;
+          text-align: center;
+          color: $blue;
+          position: absolute;
+          left: -1px;
+          top: 7px;
+        }
+      }
+    }
   }
 
   input {
