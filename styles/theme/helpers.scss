@@ -35,6 +35,7 @@
 .p-10 { padding: 10px; }
 .p-15 { padding: 15px; }
 .p-25 { padding: 25px; }
+.p-t-5 { padding-top: 5px; }
 .p-t-10 { padding-top: 10px; }
 .p-t-15 { padding-top: 15px; }
 .p-t-25 { padding-top: 25px; }
@@ -42,6 +43,7 @@
 .p-t-45 { padding-top: 45px; }
 .p-t-60 { padding-top: 60px; }
 .p-t-85 { padding-top: 85px; }
+.p-b-5 { padding-bottom: 5px; }
 .p-b-10 { padding-bottom: 10px; }
 .p-b-15 { padding-bottom: 15px; }
 .p-b-25 { padding-bottom: 25px; }
@@ -94,6 +96,11 @@
   padding-left: 10px;
  }
 
+ .p-x-15 {
+  padding-right: 15px;
+  padding-left: 15px;
+ }
+
  .p-x-20 {
   padding-right: 20px;
   padding-left: 20px;
@@ -114,6 +121,11 @@
   padding-left: 45px;
  }
 
+ .p-x-65 {
+  padding-right: 65px;
+  padding-left: 65px;
+ }
+
 // ========================================
 // Text Classes
 // ========================================
@@ -122,6 +134,11 @@
 .text-left { text-align: left; }
 .text-center-medium-up { @include medium-up { text-align: center; } }
 .text-center-large-up { @include large-up { text-align: center; } }
+.text-30 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
 .text-24 {
   font-size: 24px;
   line-height: 32px;
@@ -143,6 +160,7 @@
 .dark { color: $dark; }
 .white { color: $white; }
 .light { color: $light; }
+.gray-dead { color: $gray-dead; }
 .gray-darkest { color: $gray-darkest; }
 .gray-dark { color: $gray-dark; }
 .gray { color: $gray; }
@@ -221,7 +239,11 @@
 .btn-shadow { box-shadow: 0 2px 4px 0 rgba(56, 61, 67, 0.2); }
 .card-shadow { box-shadow: 0 4px 8px 0 rgba(56, 61, 67, 0.3); }
 .box-shadow { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
-.blue-border { border: 1px solid $blue-light; }
+.border-radius-4 { border-radius: 4px; }
+.border-blue-light { border: 1px solid $blue-light; }
+.border-blue-light-2 { border: 2px solid $blue-light; }
+
+.border-top-blue-light { border-top: 6px solid $blue-light; }
 .border-top-gray { border-top: 1px solid $gray; }
 .border-top-gray-dark { border-top: 1px solid $gray-dark; }
 
@@ -271,6 +293,8 @@
   .md-down\:p-0 { padding: 0; }
   .md-down\:p-t-15 { padding-top: 15px; }
   .md-down\:p-t-25 { padding-top: 25px; }
+  .md-down\:p-b-5 { padding-bottom: 5px; }
+  .md-down\:p-b-10 { padding-bottom: 10px; }
   .md-down\:p-b-15 { padding-bottom: 15px; }
   .md-down\:p-b-25 { padding-bottom: 25px; }
 
@@ -283,7 +307,9 @@
 @include small {
   .sm\:hidden { display: none; }
   .sm\:w-100 { width: 100%; }
+  .sm\:w-60 { width: 60%; }
   .sm\:w-50 { width: 50%; }
+  .sm\:w-40 { width: 40%; }
 
   .sm\:m-0 { margin: 0; }
   .sm\:p-0 { padding: 0; }
@@ -291,6 +317,11 @@
   .sm\:p-t-25 { padding-top: 25px; }
   .sm\:p-b-15 { padding-bottom: 15px; }
   .sm\:p-b-25 { padding-bottom: 25px; }
+
+  .sm\:p-x-15 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
   .sm\:flex-column {
     display: flex;
