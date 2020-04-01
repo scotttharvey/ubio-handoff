@@ -36,7 +36,7 @@
 .p-25 { padding: 25px; }
 .p-t-10 { padding-top: 10px; }
 .p-t-15 { padding-top: 15px; }
-.p-t-25 { padding-bottom: 25px; }
+.p-t-25 { padding-top: 25px; }
 .p-t-30 { padding-top: 30px; }
 .p-t-45 { padding-top: 45px; }
 .p-t-60 { padding-top: 60px; }
@@ -227,6 +227,8 @@
 
 .w-auto { width: auto; }
 .w-100 { width: 100%; }
+.w-75 { width: 75%; }
+.w-70 { width: 70%; }
 .w-66 { width: 66%; }
 .w-60 { width: 60%; }
 .w-50 { width: 50%; }
@@ -235,6 +237,7 @@
 .w-40 { width: 40%; }
 .w-33 { width: 33%; }
 .w-30 { width: 30%; }
+.w-25 { width: 25%; }
 
 .w-15px { width: 15px; }
 .w-25px { width: 25px; }
@@ -250,19 +253,49 @@
 // ========================================
 // Media Query Helpers
 // ========================================
+@include large-up {
+  .lg-up\:hidden { display: none; }
+}
+
+@include medium-up {
+  .md-up\:hidden { display: none; }
+}
+
 @include medium-down {
+  .md-down\:hidden { display: none; }
+
   .md-down\:w-100 { width: 100%; }
   .md-down\:w-50 { width: 50%; }
 
   .md-down\:m-0 { margin: 0; }
+  .md-down\:p-0 { padding: 0; }
+  .md-down\:p-t-15 { padding-top: 15px; }
+  .md-down\:p-t-25 { padding-top: 25px; }
+  .md-down\:p-b-15 { padding-bottom: 15px; }
+  .md-down\:p-b-25 { padding-bottom: 25px; }
+
+  .md-down\:flex-column {
+    display: flex;
+    flex-direction: column;
+   }
 }
 
 @include small {
+  .sm\:hidden { display: none; }
   .sm\:w-100 { width: 100%; }
   .sm\:w-50 { width: 50%; }
 
   .sm\:m-0 { margin: 0; }
   .sm\:p-0 { padding: 0; }
+  .sm\:p-t-15 { padding-top: 15px; }
+  .sm\:p-t-25 { padding-top: 25px; }
+  .sm\:p-b-15 { padding-bottom: 15px; }
+  .sm\:p-b-25 { padding-bottom: 25px; }
+
+  .sm\:flex-column {
+    display: flex;
+    flex-direction: column;
+   }
 
   .sm\:column-reverse {
     display: flex;
