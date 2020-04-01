@@ -18,6 +18,7 @@
 .m-b-15-small { @include small { margin-bottom: 15px; } }
 .m-b-30-medium-up { @include medium-up { margin-bottom: 30px; } }
 .m-b-30-large-up { @include large-up { margin-bottom: 30px; } }
+.m-r-5 { margin-right: 5px; }
 .m-r-10 { margin-right: 10px; }
 .m-r-15 { margin-right: 15px; }
 .m-r-25 { margin-right: 25px; }
@@ -221,9 +222,8 @@
 .card-shadow { box-shadow: 0 4px 8px 0 rgba(56, 61, 67, 0.3); }
 .box-shadow { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 .blue-border { border: 1px solid $blue-light; }
-.border-top-gray {
-  border-top: 1px solid $gray;
-}
+.border-top-gray { border-top: 1px solid $gray; }
+.border-top-gray-dark { border-top: 1px solid $gray-dark; }
 
 .w-auto { width: auto; }
 .w-100 { width: 100%; }
