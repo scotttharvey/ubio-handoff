@@ -1,10 +1,11 @@
 .icon-lock {
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
 
   &::before {
     position: absolute;
     left: 0;
+    top: -1px;
     background-image: url('/images/icons/5a-creditcheck-02.svg');
     width: 22px;
     height: 22px;
