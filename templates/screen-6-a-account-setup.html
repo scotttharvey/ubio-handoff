@@ -16,7 +16,13 @@
         <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
         <p class="p-b-25">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
 
-        <section class="bg-white w-100 p-y-45 m-b-25"></section>
+        <section class="bg-white p-25 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/3a-selectproduct.svg" alt=""/>
+            <p class="text-18">Personal Information & Credit Check</p>
+          </div>
+          <p class="no-underline text-18 blue-light">Change</p>
+        </section>
 
         <section class="bg-white p-25">
           <div class="w-100 m-b-15 flex space-between">
@@ -27,18 +33,18 @@
             <p>This 4-digit PIN will be used to verify you whenever you contact AT&T about your account. Please make a note of this information. This PIN cannot be 4 repeating numbers (4444) or 4 sequential numbers (2345).</p>
           </div>
           <form action="" class="flex flex-wrap form-container">
-            <div class="pin flex w-50 md-down:w-100">
-              <div class="w-50 p-r-25">
+            <div class="pin flex flex-wrap w-50 md-down:w-100">
+              <div class="w-50 p-r-25 md-down:w-100 sm:p-0">
                 <label for="pin">
                   PIN number*
                 </label>
-                <input id="pin" name="pin" type="number" required placeholder="0000" pattern="[0-9]{4}" />
+                <input id="pin" name="pin" type="tel" required placeholder="0000" pattern="[0-9]{4}" />
               </div>
-              <div class="w-50">
+              <div class="w-50 md-down:w-100">
                 <label for="confirmPin">
                   Confirm PIN number*
                 </label>
-                <input id="confirmPin" name="confirmPin" type="number" required placeholder="0000" pattern="[0-9]{4}" />
+                <input id="confirmPin" name="confirmPin" type="tel" required placeholder="0000" pattern="[0-9]{4}" />
               </div>
             </div>
 
@@ -47,10 +53,16 @@
                 <label for="securityQuestion">
                   Security Question*
                 </label>
-                <input id="securityQuestion" name="securityQuestion" type="" required />
+                <select name="securityQuestion" id="securityQuestion" class="w-100 dropdown" required>
+                  <option value="test">Test Val 1</option>
+                  <option value="test">Test Val 2</option>
+                  <option value="test">Test Val 3</option>
+                  <option value="test">Test Val 4</option>
+                  <option value="test">Test Val 5</option>
+                </select>
               </div>
 
-              <div class="w-50 sm:w-100 p-l-25">
+              <div class="w-50 sm:w-100 p-l-25 sm:p-0">
                 <label for="securityAnswer">
                   Security Answer*
                 </label>
@@ -62,52 +74,57 @@
               <p class="text-18 thin m-b-15">Installation Option</p>
               <p class="text-14 m-b-15">Please select one installation option</p>
 
-              <section class="self-card w-100 flex space-between box-shadow p-y-25 p-x-20">
+              <section class="self-card w-100 flex md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-25">
 
-                <div class="w-30 flex space-between">
-                  <div class="w-25">
+                <div class="w-30 md-down:w-100 md-down:p-b-25 flex space-between radio-section">
+                  <div class="radio-container w-25 md-down:w-100">
                     <label for="selfInstall" class="big-radio" >
-                      <input type="checkbox" id="selfInstall" name="selfInstall" value="Self Install" class="selfInstall m-r-15 m-0" required />
+                      <input type="radio" id="selfInstall" name="installMethod" value="Self Install" class="selfInstall m-r-15 m-0" required />
                       <span class="inputFill"></span>
                     </label>
                   </div>
-                  <div class="w-75">
-                    <img src="/images/icons/6a-accountinstall-02.svg" alt=""/>
+                  <div class="w-75 md-down:w-100">
+                    <p class="h2 text-right lg-up:hidden">FREE</p>
+                    <img src="/images/icons/6a-accountinstall-02.svg" alt="" class="md-down:hidden"/>
                   </div>
+
                 </div>
 
-                <div class="w-70 flex space-between p-l-10">
+                <div class="w-70 flex space-between p-l-10 md-down:p-0">
                   <div>
                     <p class="text-18 blue-dark p-b-15">Self-Install</p>
                     <p class="text-14 p-b-15">You will receive a self-install kit with the equipment along with instructions.</p>
                   </div>
-                  <div class="p-l-15">
+                  <div class="p-l-15 md-down:hidden">
                     <p class="text-24 thin">FREE</p>
                   </div>
                 </div>
               </section>
 
-              <section class="pro-card w-100 flex space-between box-shadow p-y-25 p-x-20">
-                <div class="w-30 flex space-between">
-                  <div class="w-25">
+              <section class="pro-card w-100 flex md-down:flex-column space-between box-shadow p-y-25 p-x-20">
+
+                <div class="w-30 md-down:w-100 md-down:p-b-25 flex space-between radio-section">
+                  <div class="radio-container w-25 md-down:w-100">
                     <label for="professionalInstall" class="big-radio" >
-                      <input type="checkbox" id="professionalInstall" name="professionalInstall" value="Professional Install" class="professionalInstall m-r-15 m-0" required />
+                      <input type="radio" id="professionalInstall" name="installMethod" value="Professional Install" class="professionalInstall m-r-15 m-0" required />
                       <span class="inputFill"></span>
                     </label>
                   </div>
-                  <div class="w-70">
-                    <img src="/images/icons/6a-accountinstall-01.svg" alt=""/>
+
+                  <div class="w-70 md-down:w-100">
+                    <p class="h1 thin text-right lg-up:hidden">$99</p>
+                    <img src="/images/icons/6a-accountinstall-01.svg" alt="" class="md-down:hidden"/>
                   </div>
                 </div>
 
-                <div class="w-75 flex space-between p-l-10">
+                <div class="w-75 md-down:w-100 flex space-between p-l-10 md-down:p-0">
                   <div>
                     <p class="text-18 blue-dark p-b-15">Professional Install</p>
                     <p class="text-14 p-b-15">A service technician will visit your location to install your Internet service. Someone 18 years of age or older must be present when the technician arrives. The installation averages 2 - 4 hours, but can vary.</p>
                     <p class="text-14 blue">Payment will be split into installments of $33 for 3 months.</p>
                   </div>
-                  <div>
-                    <p class="text-24 thin p-l-15">$99</p>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-24 thin">$99</p>
                   </div>
                 </div>
               </section>

@@ -251,19 +251,49 @@
 // ========================================
 // Media Query Helpers
 // ========================================
+@include large-up {
+  .lg-up\:hidden { display: none; }
+}
+
+@include medium-up {
+  .md-up\:hidden { display: none; }
+}
+
 @include medium-down {
+  .md-down\:hidden { display: none; }
+
   .md-down\:w-100 { width: 100%; }
   .md-down\:w-50 { width: 50%; }
 
   .md-down\:m-0 { margin: 0; }
+  .md-down\:p-0 { padding: 0; }
+  .md-down\:p-t-15 { padding-top: 15px; }
+  .md-down\:p-t-25 { padding-top: 25px; }
+  .md-down\:p-b-15 { padding-bottom: 15px; }
+  .md-down\:p-b-25 { padding-bottom: 25px; }
+
+  .md-down\:flex-column {
+    display: flex;
+    flex-direction: column;
+   }
 }
 
 @include small {
+  .sm\:hidden { display: none; }
   .sm\:w-100 { width: 100%; }
   .sm\:w-50 { width: 50%; }
 
   .sm\:m-0 { margin: 0; }
   .sm\:p-0 { padding: 0; }
+  .sm\:p-t-15 { padding-top: 15px; }
+  .sm\:p-t-25 { padding-top: 25px; }
+  .sm\:p-b-15 { padding-bottom: 15px; }
+  .sm\:p-b-25 { padding-bottom: 25px; }
+
+  .sm\:flex-column {
+    display: flex;
+    flex-direction: column;
+   }
 
   .sm\:column-reverse {
     display: flex;

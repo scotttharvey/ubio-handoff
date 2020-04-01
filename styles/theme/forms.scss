@@ -1,5 +1,58 @@
 .form-container {
 
+  .radio-section {
+
+    @include medium-down {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .radio-container {
+      @include medium-down {
+        display: flex;
+      }
+    }
+
+    .big-radio {
+      display: inline-flex;
+      cursor: pointer;
+      position: relative;
+
+      input {
+        height: 40px;
+        width: 40px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        border: 1px solid $blue-light;
+        border-radius: 20px;
+        outline: none;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        padding: 7px;
+
+
+        &:checked + .inputFill::before {
+          background-image: url('/images/icons/3a-selectproduct.svg');
+          width: 42px;
+          height: 42px;
+          content: '';
+          display: block;
+          text-align: center;
+          color: $blue;
+          position: absolute;
+          left: -1px;
+          top: 7px;
+        }
+      }
+    }
+
+  }
+
   label {
     font-size: 14px;
     font-weight: 300;
@@ -36,41 +89,6 @@
         }
       }
     }
-
-    &.big-radio {
-      display: inline-flex;
-      cursor: pointer;
-      position: relative;
-
-      input {
-        height: 40px;
-        width: 40px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -o-appearance: none;
-        appearance: none;
-        border: 1px solid $blue-light;
-        border-radius: 20px;
-        outline: none;
-        transition-duration: 0.3s;
-        cursor: pointer;
-        padding: 7px;
-
-
-        &:checked + .inputFill::before {
-          background-image: url('/images/icons/3a-selectproduct.svg');
-          width: 42px;
-          height: 42px;
-          content: '';
-          display: block;
-          text-align: center;
-          color: $blue;
-          position: absolute;
-          left: -1px;
-          top: 7px;
-        }
-      }
-    }
   }
 
   input {
@@ -91,6 +109,26 @@
       width: auto;
       margin-top: 0;
       margin-right: 10px;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    height: 40px;
+    background-color: $white;
+    border: solid 1px $blue;
+    margin: 8px auto 18px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('/images/icons/2b-service-verification-03.svg');
+      background-color: $white;
+      width: 40px;
+      height: 40px;
+      z-index: 2;
+      content: '';
     }
 
   }
