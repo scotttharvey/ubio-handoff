@@ -89,9 +89,7 @@
 
   > div {
     width: 25%;
-
-      margin-bottom: 15px;
-
+    margin-bottom: 15px;
 
     @include medium {
       width: 50%;
@@ -99,6 +97,7 @@
 
     @include small {
       width: 100%;
+      padding: 0;
     }
   }
 }
