@@ -11,7 +11,7 @@
         <h1 class="h3 gray-darkest bold m-b-25">Let’s see what packages are available in your area.</h1>
 
         <form action="" class="flex flex-wrap space-between form-container">
-          <div class="address flex-column w-100">
+          <div class="street-address flex-column w-100">
             <label for="address">
               Street Address*
             </label>
@@ -27,11 +27,11 @@
               <input id="apt" name="apt" type="text" />
           </div>
 
-          <div class="zip flex-column w-48">
-            <label for="zip">
+          <div class="zip-container flex-column w-48">
+            <label for="address-zip">
               Zip Code*
             </label>
-              <input id="zip" name="zip" type="text" pattern="[0-9]{5}" maxlength="5" required />
+              <input id="address-zip" name="zip" class="zip" type="text" pattern="[0-9]{5}" maxlength="5" required />
           </div>
 
           <input type="submit" value="See Packages" class="btn w-100 bg-blue-dark white" />
@@ -45,3 +45,4 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/smartyStreets.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>
