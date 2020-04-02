@@ -1,9 +1,36 @@
 import flatpickr from "flatpickr";
 
+const dummyTimes = {
+  '20-04-03': [
+    '11am - 12pm',
+    '12pm - 1pm',
+    '2pm - 3pm'
+  ],
+  '20-04-04': [
+    '11am - 12pm',
+    '12pm - 1pm',
+  ],
+  '20-04-06': [
+    '11am - 12pm',
+    '5pm - 6pm',
+  ],
+  '20-04-07': [
+    '11am - 12pm',
+    '1pm - 2pm',
+    '4pm - 5pm',
+    '5pm - 6pm',
+  ],
+  '20-04-08': [
+    '11am - 12pm',
+    '1:30am - 2pm',
+    '5pm - 6pm',
+  ]
+}
+
 // CALENDAR CONFIG
 document.querySelector('#calendar').flatpickr({
   minDate: 'today',
-  maxDate: new Date().fp_incr(30),
+  maxDate: new Date().fp_incr(7),
   defaultDate: 'today',
   altInput: true,
   altFormat: 'F j, Y',
@@ -12,7 +39,16 @@ document.querySelector('#calendar').flatpickr({
     firstDayOfWeek: 1, // start week on q
   },
   inline: true,
+  onChange: (dates, dayPicked) => {
+    const availableTimesContainer = document.querySelector('#available-times')
+    if (dummyTimes[dayPicked]) {
+      const buttonMarkup = dummyTimes[dayPicked].map(time =>
+        `<button class="w-75 p-y-8 p-x-45 bg-blue-dark white text-18 m-b-10 border-radius-4 box-shadow">${time}</button>`
+      )
+      availableTimesContainer.innerHTML = buttonMarkup.join('')
+    }
 
+  },
 });
 
 //  onChange: function(dates, dayPicked) {
