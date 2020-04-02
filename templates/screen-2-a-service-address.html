@@ -15,7 +15,9 @@
             <label for="address">
               Street Address*
             </label>
-              <input id="address" name="address" type="text" required />
+              <input id="address" name="address" type="text" list="address_list" required />
+              <datalist id="address_list">
+              </datalist>
           </div>
 
           <div class="apt flex-column w-48">
@@ -40,3 +42,6 @@
     </section>
   </div>
 </div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/smartyStreets.js"></script>
