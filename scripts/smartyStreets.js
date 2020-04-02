@@ -1,17 +1,13 @@
 
 if (document.querySelector('#address')) {
 
-  // const sampleKey = 21102174564513388;
-
   const addressList = document.querySelector('#address_list');
 
   document.querySelector('#address').addEventListener('input', e => {
     let target = e.target.value;
 
 
-    // fetch(`https://us-autocomplete.api.smartystreets.com/suggest?auth-id=${sampleKey}&prefix=${target}`)
-
-    fetch(`https://us-autocomplete-pro.api.smartystreets.com/suggest?key=YOURKEYHERE&prefix=${target}`)
+    fetch(`https://us-autocomplete.api.smartystreets.com/suggest?key=17515622498784883&prefix=${target}`)
     .then((response) => {
       return response.json();
     })
