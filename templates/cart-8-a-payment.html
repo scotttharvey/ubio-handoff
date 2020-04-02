@@ -60,7 +60,7 @@
                 <div class="w-100 p-r-25 md-down:w-100 sm:p-0 flex flex-row">
                   <label class="w-40 m-r-10">
                     Credit Card Number*
-                    <input name="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
+                    <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
                       pattern="[0-9]{16}" />
                   </label>
                   <img class="m-r-5" src="/images/icons/8a-payment-01.svg" alt="" />
@@ -82,7 +82,7 @@
                 <div class="w-25 sm:w-100 p-l-25 sm:p-0">
                   <label>
                     Zipcode*
-                    <input name="zipcode" type="tel" placeholder="00000" pattern="[0-9]{5}" required />
+                    <input id="payment-zip" name="zipcode" class="zip" type="tel" placeholder="00000" pattern="[0-9]{5}" required />
                   </label>
                 </div>
               </div>
@@ -91,26 +91,27 @@
                 <div class="w-50 sm:w-100">
                   <label>
                     Exp. Date*
-                    <input name="cardholder-name" placeholder="MM/YY" type="text" required />
+                    <input name="card-expire" type="tel" class="expire" placeholder="MM/YY" type="text" required />
                   </label>
                 </div>
 
                 <div class="w-50 sm:w-100 p-l-15 sm:p-0 p-b-15">
                   <label>
                     CVV*
-                    <input name="CVV" type="tel" placeholder="000" pattern="[0-9]{3}" required />
+                    <input name="CVV" type="tel" class="cvv" placeholder="000" pattern="[0-9]{3}" required />
                   </label>
                 </div>
               </div>
 
               <div class="w-100 p-l-15 sm:p-0">
                 <label for="auto-bill-pay" class="checkbox">
-                  <input type="checkbox" id="auto-bill-pay" name="auto-bill-pay" class="auto-bill-pay-trigger consent m-r-15 m-0" />
+                  <input type="checkbox" id="auto-bill-pay" name="auto-bill-pay" class="auto-bill-pay-trigger consent m-r-15 m-0" checked />
                   <span>I’d like to sign up for auto bill pay.</span>
                 </label>
               </div>
 
-              <div class="auto-bill-pay-step hidden">
+              <!-- REMOVING hidden CLASS TO SHOW CONTENT -->
+              <div class="auto-bill-pay-step">
 
                 <p class="text-14 p-b-15">
                   By providing my bank account, credit card or debit card information I authorize AT&T to store this information and to automatically charge the amount of my monthly bill due each month, and to charge any amounts outstanding if I cancel AT&T service. I certify I am the owner of the payment method, can authorize storage and make charges to the payment method I provided. My monthly payments will be charged on the date indicated on my monthly bill. You agree to update my payment method if there are changes to the payment method information. My authorization and the AT&T AutoPay service will remain in effect until revoked by I, my financial institution, or AT&T. I may revoke my AutoPay authorization online at www.att.com/myatt or by calling the customer care number on my bill. Promotional discounts or incentives that require Autopay will be removed if my account is de-enrolled from AutoPay.
@@ -118,19 +119,20 @@
 
                 <div class="w-100 p-l-15 sm:p-0">
                   <label for="auto-bill-pay-card" class="checkbox">
-                    <input type="checkbox" id="auto-bill-pay-card" name="auto-bill-pay" class=" auto-bill-pay-card-trigger consent m-r-15 m-0" />
+                    <input type="checkbox" id="auto-bill-pay-card" name="auto-bill-pay" class=" auto-bill-pay-card-trigger consent m-r-15 m-0" checked />
                     <span>Use a different card for auto bill pay</span>
                   </label>
                 </div>
               </div>
 
               <!-- START -->
-              <div class="auto-bill-pay-card-step hidden flex-wrap">
+              <!-- REMOVING hidden CLASS TO SHOW CONTENT -->
+              <div class="auto-bill-pay-card-step flex-wrap">
                 <div class="pin flex flex-wrap w-100 md-down:w-100">
                   <div class="w-100 p-r-25 md-down:w-100 sm:p-0 flex flex-row">
                     <label class="w-40 m-r-10">
                       Credit Card Number*
-                      <input name="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
+                      <input id="credit-card-number-2" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
                         pattern="[0-9]{16}" />
                     </label>
                     <img class="m-r-5" src="/images/icons/8a-payment-01.svg" alt="" />
@@ -152,7 +154,7 @@
                   <div class="w-25 sm:w-100 p-l-25 sm:p-0">
                     <label>
                       Zipcode*
-                      <input name="zipcode" type="tel" placeholder="00000" pattern="[0-9]{5}" required />
+                      <input name="zipcode" type="tel" class="zip" placeholder="00000" pattern="[0-9]{5}" required />
                     </label>
                   </div>
                 </div>
@@ -161,14 +163,14 @@
                   <div class="w-50 sm:w-100">
                     <label>
                       Exp. Date*
-                      <input name="cardholder-name" placeholder="MM/YY" type="text" required />
+                      <input name="card-expire" type="tel" class="expire" placeholder="MM/YY" type="text" required />
                     </label>
                   </div>
 
                   <div class="w-50 sm:w-100 p-l-15 sm:p-0">
                     <label>
                       CVV*
-                      <input name="CVV" type="tel" placeholder="000" pattern="[0-9]{3}" required />
+                      <input name="CVV" type="tel" class="cvv" placeholder="000" pattern="[0-9]{3}" required />
                     </label>
                   </div>
                 </div>
@@ -235,3 +237,4 @@
 </div>
 
 <script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>

@@ -43,7 +43,7 @@
                 <label for="phone">
                   Phone*
                 </label>
-                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" pattern="[0-9]{10}" maxlength="10" required />
+                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required />
               </div>
 
               <div class="w-60 sm:w-100">
@@ -57,7 +57,7 @@
             <div class="w-100 flex flex-start p-b-25">
               <label for="consent" class="checkbox" >
                 <input type="checkbox" id="consent" name="consent" value="Consent" class="consent m-r-15 m-0" required />
-                <span class="blue-dark">By checking this box, you authorize AT&T to reach you by phone or text with information about your AT&T services. Examples include install and repair appointment, billing and account information, and customer satisfaction inquiries. Standard rates may apply.</span>
+                <span class="blue-dark" tabindex="-1">By checking this box, you authorize AT&T to reach you by phone or text with information about your AT&T services. Examples include install and repair appointment, billing and account information, and customer satisfaction inquiries. Standard rates may apply.</span>
               </label>
             </div>
 
@@ -76,7 +76,6 @@
                   <label for="birthday">
                     Date of Birth*
                   </label>
-                  <!-- BIRTHDAY PATTERN = pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" -->
                   <input id="birthday" name="birthday" type="text" placeholder="DD/MM/YYYY" maxlength="10" required />
                 </div>
 
@@ -134,3 +133,4 @@
 </div>
 
 <script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>

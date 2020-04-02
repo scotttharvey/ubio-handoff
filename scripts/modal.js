@@ -15,7 +15,7 @@ if (modal) {
   };
 
   // Grab elements that act as triggers to open the modal
-  const triggers = document.querySelectorAll('[data-trigger="internet"]');
+  const triggers = document.querySelectorAll('[data-trigger]');
 
   triggers.forEach( trigger => {
     trigger.addEventListener('click', () => showModal());
