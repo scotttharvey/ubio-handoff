@@ -42,8 +42,9 @@ document.querySelector('#calendar').flatpickr({
   onChange: (dates, dayPicked) => {
     const availableTimesContainer = document.querySelector('#available-times')
     if (dummyTimes[dayPicked]) {
-      const buttonMarkup = dummyTimes[dayPicked].map(time =>
-        `<button class="w-75 p-y-8 p-x-45 bg-blue-dark white text-18 m-b-10 border-radius-4 box-shadow">${time}</button>`
+      const buttonMarkup = dummyTimes[dayPicked].map((time, index) =>
+        `<input type="radio" id="time-${index + 1}" name="apt-time" class="" value="${time}" />
+        <label for="time-${index + 1}" class="w-75 p-y-8 p-x-45 bg-blue-dark white text-18 m-b-10 border-radius-4 box-shadow pointer">${time}</label>`
       )
       availableTimesContainer.innerHTML = buttonMarkup.join('')
     }
@@ -51,17 +52,6 @@ document.querySelector('#calendar').flatpickr({
   },
 });
 
-//  onChange: function(dates, dayPicked) {
-//   const selectOptionsContainer = document.querySelector('.time-select-container .form-number-1');
-//   const [year, month, day] = dayPicked.split('-');
-//   const formattedDate = `20${year}-${month}-${day}`;
-//   $.get(`/includes/datetimeoption.php?selectedDate=${formattedDate}`, data => {
-//     while (selectOptionsContainer.firstChild) {
-//       selectOptionsContainer.removeChild(selectOptionsContainer.firstChild);
-//     }
-//     document.querySelector('.time-select-container .form-number-1').insertAdjacentHTML('beforeend', data);
-//   });
-// },
 // disable: [
 //   function(date) {
 
