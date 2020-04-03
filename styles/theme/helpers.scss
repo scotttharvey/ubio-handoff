@@ -268,8 +268,10 @@
 
 .w-15px { width: 15px; }
 .w-25px { width: 25px; }
+.w-35px { width: 35px; }
 .h-15px { height: 15px; }
 .h-25px { height: 25px; }
+.h-35px { height: 35px; }
 
 .max-w-100 { max-width: 100%; }
 .max-w-50 { max-width: 50%; }
@@ -282,6 +284,7 @@
 // ========================================
 @include large-up {
   .lg-up\:hidden { display: none; }
+  .lg-up\:p-r-50 { padding-right: 50px; }
 }
 
 @include medium-up {
