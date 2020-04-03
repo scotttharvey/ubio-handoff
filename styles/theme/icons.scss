@@ -12,3 +12,19 @@
     content: '';
   }
 }
+
+.icon-check-circle {
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background-image: url('/images/icons/3a-selectproduct.svg');
+    width: 22px;
+    height: 22px;
+    content: '';
+  }
+}
+
