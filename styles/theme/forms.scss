@@ -122,6 +122,7 @@
     transition-duration: 0.3s;
     cursor: pointer;
     padding: 7px;
+    margin-top: -2px;
 
 
     &:checked + span::before {

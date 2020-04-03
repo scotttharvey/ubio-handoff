@@ -55,6 +55,8 @@
 .p-l-10 { padding-left: 10px; }
 .p-l-15 { padding-left: 15px; }
 .p-l-25 { padding-left: 25px; }
+.p-l-30 { padding-left: 30px; }
+.p-l-33 { padding-left: 33px; }
 
 .p-y-5 {
   padding-top: 5px;
@@ -233,6 +235,8 @@
 .space-between { justify-content: space-between; }
 .inline-block { display: inline-block; }
 .relative { position: relative; }
+.absolute { position: absolute; }
+.bottom-0 { bottom: 0; }
 .pointer:hover { cursor: pointer; }
 
 .btn-shadow { box-shadow: 0 2px 4px 0 rgba(56, 61, 67, 0.2); }
@@ -296,6 +300,8 @@
   .md-down\:p-b-10 { padding-bottom: 10px; }
   .md-down\:p-b-15 { padding-bottom: 15px; }
   .md-down\:p-b-25 { padding-bottom: 25px; }
+  .md-down\:p-b-35 { padding-bottom: 35px; }
+  .md-down\:p-b-45 { padding-bottom: 45px; }
 
   .md-down\:flex-column {
     display: flex;
@@ -316,6 +322,8 @@
   .sm\:p-t-25 { padding-top: 25px; }
   .sm\:p-b-15 { padding-bottom: 15px; }
   .sm\:p-b-25 { padding-bottom: 25px; }
+  .sm\:p-b-35 { padding-bottom: 35px; }
+  .sm\:p-b-45 { padding-bottom: 45px; }
 
   .sm\:p-x-15 {
     padding-right: 15px;

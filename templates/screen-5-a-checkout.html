@@ -86,7 +86,21 @@
             </div>
 
             <div class="flex flex-end w-100 p-t-25">
-              <button class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45">Next</button>
+              <button class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45" data-modal-trigger="money-deposit">Next</button>
+              <!-- Start modal content -->
+              <div data-modal-content="money-deposit" class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close">&times;</span>
+                  </div>
+                  <div class="text-center p-y-30">
+                    <p class="text-24 p-b-15">Based on your credit report, you are required to pay a <span class="blue-light">$100.00</span> security deposit.</p>
+                    <p class="p-b-15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe in quidem alias mollitia totam maiores praesentium quos recusandae. Iusto suscipit et nostrum recusandae a sint ut sed, non necessitatibus?</p>
+                    <button class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Yes, I agree to continue</button>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
             </div>
 
           </form>
