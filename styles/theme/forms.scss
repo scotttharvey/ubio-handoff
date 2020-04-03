@@ -136,3 +136,37 @@
     }
   }
 }
+
+.available-times {
+  display: flex;
+  overflow: hidden;
+
+  label {
+    background-color: $white;
+    color: $blue-dark;
+    padding: 15px 50px;
+    text-align: center;
+    border: 2px solid $blue-dark;
+  }
+
+  input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+
+    &:checked + label {
+      position: relative;
+      background-color: $blue-dark;
+      color: $white;
+      border: 2px solid $blue-dark;
+    }
+  }
+
+}
