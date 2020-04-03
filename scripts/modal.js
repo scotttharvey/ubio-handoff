@@ -1,41 +1,44 @@
-// Get the modal
-const modal = document.querySelector('#myModal');
+window.addEventListener('DOMContentLoaded', () => {
 
-if (modal) {
+  const modalTriggers = document.querySelectorAll('[data-modal-trigger]')
+  const modalContent = document.querySelectorAll('[data-modal-content]')
 
-  if (modal.classList.contains('is-active')) {
-    modal.classList.remove('invisible');
-  } else {
-    modal.classList.add('invisible');
+  const closeModals = () => {
+    document.querySelectorAll(`[data-modal-content]`).forEach(modal => {
+      modal.classList.add('hidden')
+    })
   }
 
-  // If user clicks the button, open the modal
-  showModal = () => {
-    modal.classList.remove('invisible');
-  };
+  const toggleModal = e => {
 
-  // Grab elements that act as triggers to open the modal
-  const triggers = document.querySelectorAll('[data-trigger]');
+    if (e.target.dataset.modalTrigger === 'close') {
+      closeModals()
+    } else {
+      document.querySelector(`[data-modal-content="${e.target.dataset.modalTrigger}"]`).classList.remove('hidden')
+    }
 
-  triggers.forEach( trigger => {
-    trigger.addEventListener('click', () => showModal());
-  })
+  }
 
-  // Get the <span> element that closes the modal
-  const span = document.getElementsByClassName("close")[0];
+  if (modalTriggers) {
+    modalTriggers.forEach(trigger => {
+      trigger.addEventListener('click', toggleModal)
+    })
+  }
 
-  displayNone = () => {
-    modal.classList.add('invisible');
-  };
+  if (modalContent) {
+    modalContent.forEach(content => {
+      content.children[0].addEventListener('click', e => {
+        e.stopPropagation();
+      })
+    })
+  }
 
-  // If user clicks on <span> (x), close the modal
-  span.onclick = displayNone;
-
-  // If user clicks anywhere outside of the modal, close it
-  window.onclick = event => {
-    if (event.target == modal) {
-      modal.classList.add('invisible');
+    // If user clicks anywhere outside of the modal, close it
+  window.onclick = e => {
+    if (!e.target.dataset.modalTrigger ) {
+      closeModals()
     }
   }
 
-}
+});
+
