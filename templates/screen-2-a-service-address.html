@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="./../styles/index.scss" />
 
 
-  <!-- SCREEN 2-A -->
-  <div class="container bg-gray-light bg-family-hero">
+<!-- SCREEN 2-A -->
+<div class="container bg-gray-light bg-family-hero">
   <div class="row p-y-30">
     <section class="flex w-100">
 
@@ -16,22 +16,22 @@
               Street Address*
             </label>
             <input id="address" name="address" type="text" list="address_list" required />
-              <datalist id="address_list">
-              </datalist>
+            <datalist id="address_list">
+            </datalist>
           </div>
 
           <div class="apt flex-column w-48 sm:w-100">
             <label for="apt">
               Apt./Suite/Bldg.
             </label>
-              <input id="apt" name="apt" type="text" />
+            <input id="apt" name="apt" type="text" />
           </div>
 
           <div class="zip-container flex-column w-48 sm:w-100">
             <label for="address-zip">
               Zip Code*
             </label>
-              <input id="address-zip" name="zip" class="zip" type="text" placeholder="00000" required />
+            <input id="address-zip" name="zip" class="zip" type="text" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
           </div>
 
           <input type="submit" value="See Packages" class="btn w-100 bg-blue-dark white" />

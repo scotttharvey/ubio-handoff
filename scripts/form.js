@@ -1,3 +1,8 @@
+import $ from "jquery";
+import parsley from 'parsleyjs'
+
+$('form').parsley()
+
 const termsForm = document.querySelector('#terms-conditions');
 
 if ( termsForm ) {
