@@ -3,7 +3,7 @@
   .radio-section {
 
     @include medium-down {
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
     }
@@ -11,6 +11,7 @@
     .radio-container {
       @include medium-down {
         display: flex;
+        justify-content: flex-end;
       }
     }
 
