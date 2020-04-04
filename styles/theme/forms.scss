@@ -175,14 +175,14 @@
 
 }
 
-.radio-section {
+.installoption {
   .parsley-errors-list li {
     top: 10px;
+    left: 0;
 
     @include small {
-      top: 0px;
+      top: 5px;
       left: 10px;
-      width: 60px;
     }
   }
 }
@@ -220,6 +220,8 @@
       left: 0;
       top: unset;
       bottom: -25px;
+
+      @include small { top: 10px; }
     }
   }
 }

@@ -32,7 +32,7 @@
           <div class="w-100 m-b-25 gray-darkest">
             <p>This 4-digit PIN will be used to verify you whenever you contact AT&T about your account. Please make a note of this information. This PIN cannot be 4 repeating numbers (4444) or 4 sequential numbers (2345).</p>
           </div>
-          <form action="" class="flex flex-wrap form-container">
+          <form class="flex flex-wrap form-container">
             <div class="pin-container flex flex-wrap w-50 md-down:w-100">
               <div class="w-50 p-r-15 md-down:w-100 sm:p-0">
                 <label for="pin">
@@ -44,7 +44,7 @@
                 <label for="confirmPin">
                   Confirm PIN number*
                 </label>
-                <input id="confirmPin" name="confirmPin" class="pin" type="password" required placeholder="0000" pattern="[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="PIN expects 4 numbers" data-parsley-pattern="[0-9]{4}" />
+                <input id="confirmPin" name="confirmPin" class="pin" type="password" required placeholder="0000" pattern="[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="PIN expects 4 digits" data-parsley-pattern="[0-9]{4}" data-parsley-equalto="#pin" data-parsley-equalto-message="PIN does not match." />
               </div>
             </div>
 
@@ -79,7 +79,7 @@
                 <div class="w-30 md-down:w-100 md-down:p-b-25 flex space-between radio-section">
                   <div class="radio-container w-25 md-down:w-100">
                     <label for="selfInstall" class="big-radio" >
-                      <input type="radio" id="selfInstall" name="installMethod" value="Self Install" class="selfInstall m-r-15 m-0" required />
+                      <input type="radio" id="selfInstall" name="installMethod" value="Self Install" class="selfInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
                       <span class="inputFill"></span>
                     </label>
                   </div>
@@ -106,7 +106,7 @@
                 <div class="w-30 md-down:w-100 md-down:p-b-25 flex space-between radio-section">
                   <div class="radio-container w-25 md-down:w-100">
                     <label for="professionalInstall" class="big-radio" >
-                      <input type="radio" id="professionalInstall" name="installMethod" value="Professional Install" class="professionalInstall m-r-15 m-0" required />
+                      <input type="radio" id="professionalInstall" name="installMethod" value="Professional Install" class="professionalInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
                       <span class="inputFill"></span>
                     </label>
                   </div>
@@ -128,6 +128,9 @@
                   </div>
                 </div>
               </section>
+
+              <div id="installMethodError"></div>
+
             </div>
 
             <div class="flex flex-end w-100">

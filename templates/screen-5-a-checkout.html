@@ -23,14 +23,14 @@
             <p class="gray">Step 1 of 5</p>
           </div>
           <form action="" class="flex flex-wrap form-container">
-            <div class="name flex w-100">
-              <div class="w-33 sm:w-50 m-r-25">
+            <div class="name-container flex w-100 sm:flex-column">
+              <div class="w-33 md-down:w-50 sm:w-100  m-r-25 sm:p-0">
                 <label for="firstname">
                   First name*
                 </label>
                 <input id="firstname" name="firstname" type="text" required />
               </div>
-              <div class="w-33 sm:w-50">
+              <div class="w-33 md-down:w-50 sm:w-100">
                 <label for="lastname">
                   Last name*
                 </label>
@@ -65,22 +65,22 @@
               <p class="text-18 thin m-b-15 icon-lock">Credit Check</p>
               <p class="text-14 m-b-15">To complete your order, we need a few details to check your credit. We'll use your existing credit info that may be on file with other AT&T companies and/or a credit bureau.</p>
               <div class="w-100 flex flex-wrap">
-                <div class="w-33 md-down:w-50">
+                <div class="w-33 md-down:w-100">
                   <label for="SSN">
                     SSN*
                   </label>
-                  <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required />
+                  <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
                 </div>
 
-                <div class="w-33 md-down:w-50 p-l-25">
+                <div class="w-33 md-down:w-100 p-l-25 md-down:p-0">
                   <label for="birthday">
                     Date of Birth*
                   </label>
-                  <input id="birthday" name="birthday" type="text" placeholder="DD/MM/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required />
+                  <input id="birthday" name="birthday" type="text" placeholder="DD/MM/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
                 </div>
 
                 <div class="w-33 sm:w-50 p-l-25 sm:p-0 flex align-center p-b-10">
-                  <img src="/images/icons/5a-creditcheck-03.svg" alt="" class="w-50">
+                  <img src="/images/icons/5a-creditcheck-03.svg" alt="" class="w-50 sm:w-60">
                 </div>
               </div>
             </div>
