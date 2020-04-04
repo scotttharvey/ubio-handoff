@@ -2,7 +2,6 @@ import $ from "jquery";
 import "jquery-mask-plugin";
 
 $(() => {
-  console.log('working');
 
   $('.zip').mask('00000');
   $('#phone').mask('(000)000-0000');
