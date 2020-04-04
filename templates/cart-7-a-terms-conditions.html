@@ -54,18 +54,17 @@
           <p class="m-b-15 gray-darkest">General</p>
           <p class="text-14 p-b-25 gray-darkest">Pricing, programming, and features subject to change at any time without notice.</p>
 
-        <form id="terms-conditions">
+        <form class="terms-conditions">
             <div class="w-100 p-y-25 md-down:p-b-45 border-top-gray-dark relative ">
               <label for="consent" class="checkbox">
-                <input type="checkbox" id="consent" name="consent" value="Consent" class="consent m-r-15 m-0" />
+                <input type="checkbox" id="consent" data-parsley-required-message="You must check this box in order to continue with your order." name="consent" required class="consent m-r-15 m-0" />
                 <span class="blue-light" tabindex="-1">I agree to the terms and conditions listed above.</span>
               </label>
-              <p class="error hidden pink absolute bottom-0 p-l-33 text-14 w-75">I am an error message because you are foolish.</p>
             </div>
 
             <div class="p-t-25"></div>
 
-            <button class="btn bg-blue-dark white p-x-45 p-y-8 block m-l-auto">I agree</button>
+            <button type="submit" class="btn bg-blue-dark white p-x-45 p-y-8 block m-l-auto">I agree</button>
 
           </form>
 
@@ -76,8 +75,8 @@
       <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 content">
         <p class="h3 thin m-b-25">Cost</p>
 
-        <section>
-          <div class="bg-white p-25 m-b-25">
+        <section class="p-b-15">
+          <div class="bg-white p-25 sm:p-x-15 p-b-25">
             <p class="text-18 bold p-b-15">Monthly Cost</p>
             <div class="flex space-between p-b-15">
               <p class="text-14">Internet 100</p>
@@ -87,6 +86,17 @@
             <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
               <p class="text-18">Total</p>
               <p class="text-18">$69.99</p>
+            </div>
+
+            <p class="text-18 bold p-y-15">First Bill Charges</p>
+            <div class="flex space-between">
+              <p class="text-14 p-r-15">Professional Install - Installation charges are waived for customers ordering AT&T Fiber</p>
+              <p class="text-14">$0.00</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Total</p>
+              <p class="text-18">$0.00</p>
             </div>
           </div>
         </section>

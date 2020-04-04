@@ -2,9 +2,9 @@ import $ from "jquery";
 import "jquery-mask-plugin";
 
 $(() => {
-  console.log('working');
 
   $('.zip').mask('00000');
+  $('.pin').mask('0000');
   $('#phone').mask('(000)000-0000');
   $('#SSN').mask('000-00-0000');
   $('#birthday').mask('TN/ON/YNNN', {

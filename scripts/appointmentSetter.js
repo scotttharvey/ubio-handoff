@@ -43,7 +43,7 @@ document.querySelector('#calendar').flatpickr({
     const availableTimesContainer = document.querySelector('#available-times')
     if (dummyTimes[dayPicked]) {
       const buttonMarkup = dummyTimes[dayPicked].map((time, index) =>
-        `<input type="radio" id="time-${index + 1}" name="apt-time" class="" value="${time}" />
+        `<input type="radio" id="time-${index + 1}" name="apt-time" class="" value="${time}" required data-parsley-required-message="Select a time slot." />
         <label for="time-${index + 1}" class="w-75 p-y-8 p-x-45 bg-blue-dark white text-18 m-b-10 border-radius-4 box-shadow pointer">${time}</label>`
       )
       availableTimesContainer.innerHTML = buttonMarkup.join('')

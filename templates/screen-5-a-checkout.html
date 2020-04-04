@@ -43,18 +43,18 @@
                 <label for="phone">
                   Phone*
                 </label>
-                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required />
+                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
               </div>
 
               <div class="w-60 sm:w-100">
                 <label for="email">
                   Email*
                 </label>
-                <input id="email" name="email" type="email" required />
+                <input id="email" name="email" type="email" required data-parsley-required-message="Email is required" data-parsley-pattern-message="Please enter valid email" data-parsley-pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" />
               </div>
             </div>
 
-            <div class="w-100 flex flex-start p-b-25">
+            <div class="w-100 flex flex-start flex-column checkbox-container p-b-25">
               <label for="consent" class="checkbox" >
                 <input type="checkbox" id="consent" name="consent" value="Consent" class="consent m-r-15 m-0" required />
                 <span class="blue-dark" tabindex="-1">By checking this box, you authorize AT&T to reach you by phone or text with information about your AT&T services. Examples include install and repair appointment, billing and account information, and customer satisfaction inquiries. Standard rates may apply.</span>
@@ -76,7 +76,7 @@
                   <label for="birthday">
                     Date of Birth*
                   </label>
-                  <input id="birthday" name="birthday" type="text" placeholder="DD/MM/YYYY" maxlength="10" required />
+                  <input id="birthday" name="birthday" type="text" placeholder="DD/MM/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required />
                 </div>
 
                 <div class="w-33 sm:w-50 p-l-25 sm:p-0 flex align-center p-b-10">
