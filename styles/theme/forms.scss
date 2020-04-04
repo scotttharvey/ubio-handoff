@@ -144,7 +144,6 @@
   label {
     background-color: $white;
     color: $blue-dark;
-    padding: 15px 50px;
     text-align: center;
     border: 2px solid $blue-dark;
   }
@@ -169,6 +168,31 @@
     }
   }
 
+  + .parsley-errors-list li {
+    top: 0;
+    left: 0;
+  }
+
+}
+
+.radio-section {
+  .parsley-errors-list li {
+    top: 10px;
+
+    @include small {
+      top: 0px;
+      left: 10px;
+      width: 60px;
+    }
+  }
+}
+
+.checkbox-container {
+  .parsley-errors-list li {
+    top: 5px;
+    left: 28px;
+    white-space: nowrap;
+  }
 }
 
 .parsley-errors-list {
