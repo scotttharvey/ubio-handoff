@@ -37,7 +37,7 @@
 
 
         &:checked + .inputFill::before {
-          background-image: url('/images/icons/3a-selectproduct.svg');
+          background-image: url('/images/icons/check-blue-filled.svg');
           width: 42px;
           height: 42px;
           content: '';
@@ -92,7 +92,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url('/images/icons/2b-service-verification-03.svg');
+      background-image: url('/images/icons/chevron-left.svg');
       background-color: $white;
       width: 40px;
       height: 40px;
