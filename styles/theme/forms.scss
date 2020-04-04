@@ -213,3 +213,13 @@
     display: none;
   }
 }
+
+.terms-conditions {
+  .parsley-errors-list {
+    li {
+      left: 0;
+      top: unset;
+      bottom: -25px;
+    }
+  }
+}
