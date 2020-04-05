@@ -27,9 +27,27 @@
             <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
             <p class="p-x-10 text-14 gray-dark">Install</p>
           </div>
-          <div class="flex flex-row align-center">
+          <div id="cart" class="cart-container pointer flex flex-row align-center" data-target="cart">
             <img class="w-25px h-25px" src="../images/icons/cart-blue.svg" alt=""/>
             <p class="m-l-10">My Cart</p>
+            <!-- Cart Dropdown -->
+            <div class="dropdown-container box-shadow border-gray-light bg-light hidden p-15">
+              <p class="text-24 thin p-b-15">Cost</p>
+              <div class="bg-white p-25 sm:p-x-15 m-b-25">
+                <p class="text-18 bold p-b-15">Monthly Cost</p>
+                <div class="flex space-between p-b-15">
+                  <p class="text-14">Internet 100</p>
+                  <p class="text-14">$69.99</p>
+                </div>
+                <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+                  <p class="text-18">Total</p>
+                  <p class="text-18">$69.99</p>
+                </div>
+              </div>
+              <div class="w-100 flex flex-end p-b-15">
+                <button class="btn btn-shadow bg-blue-dark white p-y-8 p-x-25 ">Checkout</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -197,3 +215,4 @@
   </div>
 
   <script type="text/javascript" src="../index.js"></script>
+  <script type="text/javascript" src="../scripts/cart.js"></script>

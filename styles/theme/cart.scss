@@ -1,0 +1,18 @@
+.cart-container {
+  position: relative;
+
+  .dropdown-container {
+    position: absolute;
+    width: 370px;
+    margin: 0 auto;
+    top: 34px;
+    right: 0;
+    z-index: 99;
+
+    @include small {
+      top: 46px;
+      right: -15px;
+      width: 100vw;
+    }
+  }
+}
