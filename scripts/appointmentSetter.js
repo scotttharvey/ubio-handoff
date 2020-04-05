@@ -73,7 +73,7 @@ document.querySelector('#calendar').flatpickr({
           input.setAttribute("data-parsley-required-message", "Select a time slot.")
 
           label.setAttribute("for", `time-${index + 1}`)
-          label.classList = "w-75 p-y-8 p-x-45 bg-blue-dark white text-18 m-b-10 border-radius-4 box-shadow pointer";
+          label.classList = "w-75 sm:w-100 p-y-8 p-x-45 bg-blue-dark white text-18 m-b-10 border-radius-4 box-shadow pointer";
           label.innerText = time;
 
           const errorList = document.querySelector('#available-times + .parsley-errors-list');

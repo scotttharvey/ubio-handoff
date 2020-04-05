@@ -4,29 +4,29 @@
 <!-- SCREEN 6-A -->
 <div class="container row w-100 bg-white">
   <section class="w-100 bg-white p-y-15 content flex space-between">
-    <p class="text-18 icon-lock">Secure Checkout</p>
+    <p class="text-18 icon lock">Secure Checkout</p>
     <p class="blue-light">Back to Cart</p>
   </section>
 </div>
 
 <div class="container bg-gray-light">
-  <div id="screen-5" class="row p-y-30">
-    <section class="flex w-100 flex-wrap sm:column-reverse">
-      <div class="w-66 sm:w-100 p-y-25 sm:p-x-15 content">
+  <div id="screen-6" class="row p-y-30 sm:p-y-15">
+    <section class="flex w-100 flex-wrap sm:flex-column">
+      <div class="w-66 sm:w-100 p-y-25 sm:p-x-15 sm:p-t-0 content">
         <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
-        <p class="p-b-25">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
+        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
 
-        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-wrap space-between align-center">
           <div class="flex flex-row align-center">
-            <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue-filled.svg" alt=""/>
-            <p class="text-18">Personal Information & Credit Check</p>
+            <img class="w-20px h-20px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
+            <p class="text-18 sm:text-14">Personal Information & Credit Check</p>
           </div>
-          <p class="no-underline text-18 blue-light">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15">
           <div class="w-100 m-b-15 flex space-between">
-            <p class="text-24">Account Setup & Installation</p>
+            <p class="text-24 sm:text-18">Account Setup & Installation</p>
             <p class="gray">Step 2 of 5</p>
           </div>
           <div class="w-100 m-b-25 gray-darkest">
@@ -34,13 +34,13 @@
           </div>
           <form class="flex flex-wrap form-container">
             <div class="pin-container flex flex-wrap w-50 md-down:w-100">
-              <div class="w-50 p-r-15 md-down:w-100 sm:p-0">
+              <div class="w-50 p-r-15 sm:p-r-10">
                 <label for="pin">
                   PIN number*
                 </label>
                 <input id="pin" name="pin" class="pin" type="password" required placeholder="0000" pattern="[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="PIN expects 4 numbers" data-parsley-pattern="[0-9]{4}" />
               </div>
-              <div class="w-50 md-down:w-100 p-l-15 sm:p-0">
+              <div class="w-50 p-l-15 sm:p-l-10">
                 <label for="confirmPin">
                   Confirm PIN number*
                 </label>
@@ -148,8 +148,8 @@
       </div>
 
       <!-- COST SECTION -->
-      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 content">
-        <p class="h3 thin m-b-25">Cost</p>
+      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 sm:p-t-0 content">
+        <p class="h3 thin p-b-25 sm:p-b-10">Cost</p>
 
         <section>
           <div class="bg-white p-25 sm:p-x-15 m-b-25">

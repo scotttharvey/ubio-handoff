@@ -30,6 +30,16 @@
 .-m-t-3 { margin-top: -3px;}
 .-m-t-5 { margin-top: -5px;}
 
+.m-x-5 {
+  margin-right: 5px;
+  margin-left: 5px;
+ }
+
+ .m-x-5 {
+  margin-right: 5px;
+  margin-left: 5px;
+ }
+
 // ========================================
 // Padding Classes
 // ========================================
@@ -51,6 +61,7 @@
 .p-b-30 { padding-bottom: 30px; }
 .p-b-35 { padding-bottom: 35px; }
 .p-b-45 { padding-bottom: 45px; }
+.p-r-5 { padding-right: 5px; }
 .p-r-10 { padding-right: 10px; }
 .p-r-15 { padding-right: 15px; }
 .p-r-25 { padding-right: 25px; }
@@ -326,7 +337,13 @@
 }
 
 @include small {
+  .sm\:text-14 { font-size: 14px; }
+  .sm\:text-18 { font-size: 18px; }
+
+  .sm\:text-left { text-align: left; }
+
   .sm\:hidden { display: none; }
+
   .sm\:w-100 { width: 100%; }
   .sm\:w-75 { width: 75%; }
   .sm\:w-60 { width: 60%; }
@@ -337,13 +354,20 @@
   .sm\:m-0 { margin: 0; }
   .sm\:p-0 { padding: 0; }
   .sm\:p-t-0 { padding-top: 0; }
+  .sm\:p-t-10 { padding-top: 10px; }
   .sm\:p-t-15 { padding-top: 15px; }
   .sm\:p-t-25 { padding-top: 25px; }
   .sm\:p-b-0 { padding-bottom: 0; }
+  .sm\:p-b-5 { padding-bottom: 5px; }
+  .sm\:p-b-10 { padding-bottom: 10px; }
   .sm\:p-b-15 { padding-bottom: 15px; }
   .sm\:p-b-25 { padding-bottom: 25px; }
   .sm\:p-b-35 { padding-bottom: 35px; }
   .sm\:p-b-45 { padding-bottom: 45px; }
+
+  .sm\:p-r-10 { padding-right: 10px; }
+
+  .sm\:p-l-10 { padding-left: 10px; }
 
   .sm\:p-y-15 {
     padding-top: 15px;
