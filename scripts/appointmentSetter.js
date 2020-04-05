@@ -1,25 +1,6 @@
 import flatpickr from "flatpickr";
 
 const dummyTimes = {
-  '20-04-10': [
-    '11am - 12pm',
-    '12pm - 1pm',
-    '2pm - 3pm'
-  ],
-  '20-04-03': [
-    '11am - 12pm',
-    '12pm - 1pm',
-    '2pm - 3pm'
-  ],
-  '20-04-09': [
-    '11am - 12pm',
-    '12pm - 1pm',
-    '2pm - 3pm'
-  ],
-  '20-04-04': [
-    '11am - 12pm',
-    '12pm - 1pm',
-  ],
   '20-04-05': [
     '11am - 12pm',
     '11am - 12pm',
@@ -38,15 +19,34 @@ const dummyTimes = {
   ],
   '20-04-08': [
     '11am - 12pm',
+    '12pm - 1pm',
+    '2pm - 3pm'
+  ],
+  '20-04-09': [
+    '11am - 12pm',
+    '12pm - 1pm',
+    '2pm - 3pm'
+  ],
+  '20-04-10': [
+    '11am - 12pm',
+    '12pm - 1pm',
+    '2pm - 3pm'
+  ],
+  '20-04-11': [
+    '11am - 12pm',
+    '12pm - 1pm',
+  ],
+  '20-04-12': [
+    '11am - 12pm',
     '1:30am - 2pm',
     '5pm - 6pm',
+    '7:30pm - 8:00pm',
   ]
 }
-// maxDate: new Date().fp_incr(7),
 // CALENDAR CONFIG
 document.querySelector('#calendar').flatpickr({
-  minDate: new Date('April 03 2020'),
-  maxDate: new Date('April 10 2020'),
+  minDate: 'today',
+  maxDate: new Date().fp_incr(7),
   defaultDate: 'today',
   altInput: true,
   altFormat: 'F j, Y',
@@ -55,7 +55,9 @@ document.querySelector('#calendar').flatpickr({
     firstDayOfWeek: 1, // start week on q
   },
   inline: true,
-  onChange: (dates, dayPicked) => {
+  onChange: (dates, dayPicked, instance) => {
+    console.log(dayPicked);
+
     const availableTimesContainer = document.querySelector('#available-times')
     if (dummyTimes[dayPicked]) {
       availableTimesContainer.innerHTML = ''
@@ -89,18 +91,18 @@ document.querySelector('#calendar').flatpickr({
 
   },
 });
-
+// maxDate: new Date('April 10 2020'),
 // disable: [
 //   function(date) {
 
-//     // return true to disable :: DISABLED SUNDAY & 2018 Holidays
+//     // return true to disable :: DISABLED SUNDAY & 2020 Random Days
 //     return (date.getDay() === 0 || date.getDay() === 7 ||
-//     date.toDateString() === 'Mon Sep 03 2018' ||
-//     date.toDateString() === 'Thu Nov 22 2018' ||
-//     date.toDateString() === 'Fri Nov 23 2018' ||
-//     date.toDateString() === 'Mon Dec 24 2018' ||
-//     date.toDateString() === 'Tue Dec 25 2018' ||
-//     date.toDateString() === 'Mon Dec 31 2018' ||
-//     date.toDateString() === 'Tue Jan 01 2019');
+//     date.toDateString() === 'Mon Sep 03 2020' ||
+//     date.toDateString() === 'Thu Nov 22 2020' ||
+//     date.toDateString() === 'Fri Nov 23 2020' ||
+//     date.toDateString() === 'Mon Dec 24 2020' ||
+//     date.toDateString() === 'Tue Dec 25 2020' ||
+//     date.toDateString() === 'Mon Dec 31 2020' ||
+//     date.toDateString() === 'Tue Jan 01 2020');
 //   },
 // ],

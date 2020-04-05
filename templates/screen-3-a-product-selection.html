@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div class="container box-shadow">
+  <div id="cartNav" class="cartNav container box-shadow">
     <div class="row p-y-8">
         <div class="flex space-between content">
           <div class="flex align-center p-y-8 md-up:hidden">
@@ -32,21 +32,23 @@
             <p class="p-x-5">My Cart</p>
             <img src="../images/icons/chevron-left.svg" alt="" class="dropdown-arrow md-up:hidden w-25px h-25px -m-t-3  icon-rotate-270"/>
             <!-- Cart Dropdown -->
-            <div class="dropdown-container box-shadow border-gray-light bg-light hidden p-15">
-              <p class="text-24 thin p-b-15">Cost</p>
-              <div class="bg-white p-25 sm:p-x-15 m-b-25">
-                <p class="text-18 bold p-b-15">Monthly Cost</p>
-                <div class="flex space-between p-b-15">
-                  <p class="text-14">Internet 100</p>
-                  <p class="text-14">$69.99</p>
+            <div class="cart-dropdown box-shadow border-gray-light bg-light hidden p-15">
+              <div class="dropdown-container">
+                <p class="text-24 thin p-b-15">Cost</p>
+                <div class="bg-white p-25 sm:p-x-15 m-b-25">
+                  <p class="text-18 bold p-b-15">Monthly Cost</p>
+                  <div class="flex space-between p-b-15">
+                    <p class="text-14">Internet 100</p>
+                    <p class="text-14">$69.99</p>
+                  </div>
+                  <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+                    <p class="text-18">Total</p>
+                    <p class="text-18">$69.99</p>
+                  </div>
                 </div>
-                <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
-                  <p class="text-18">Total</p>
-                  <p class="text-18">$69.99</p>
+                <div class="w-100 flex flex-end p-b-15">
+                  <button class="btn btn-shadow bg-blue-dark white p-y-8 p-x-25 ">Checkout</button>
                 </div>
-              </div>
-              <div class="w-100 flex flex-end p-b-15">
-                <button class="btn btn-shadow bg-blue-dark white p-y-8 p-x-25 ">Checkout</button>
               </div>
             </div>
           </div>
