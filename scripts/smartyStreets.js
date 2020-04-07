@@ -13,14 +13,14 @@ if (document.querySelector('#address')) {
     })
     .then((data) => {
       addressList.innerHTML = "";
+      if (data.suggestions) {
+        data.suggestions.forEach(address => {
+          let option = document.createElement('option');
+          option.value = address.text;
 
-      console.log(data);
-      data.suggestions.forEach(address => {
-        let option = document.createElement('option');
-        option.value = address.text;
-
-        addressList.appendChild(option);
-      })
+          addressList.appendChild(option);
+        })
+      }
 
     })
     .catch(error => console.log(error));
