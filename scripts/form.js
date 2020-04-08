@@ -15,13 +15,9 @@ $('form').on('keyup change paste', 'input, select, textarea', function(){
   const parentForm = $(this).closest('form')
   const submit = parentForm.find('[type="submit"]')
   if (parentForm.parsley().isValid()) {
-    submit.attr('disabled', false)
-    submit.removeClass('bg-gray-dark')
-    submit.addClass('bg-blue-dark')
+    submit.removeClass('disabled')
   } else {
-    submit.attr('disabled', true)
-    submit.addClass('bg-gray-dark')
-    submit.removeClass('bg-blue-dark')
+    submit.addClass('disabled')
   }
 });
 

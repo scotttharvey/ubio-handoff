@@ -61,7 +61,7 @@
                   <label class="w-40 md-down:w-100 m-r-10">
                     Credit Card Number*
                     <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
-                      pattern="[0-9]{16}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="[0-9]{16}" />
+                      pattern="([0-9]{4} ){3}[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="([0-9]{4} ){3}[0-9]{4}" />
                   </label>
                   <div class="flex flex-center md-down:p-b-15">
                     <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/visa-card.svg" alt="" />
@@ -135,7 +135,7 @@
                     <label class="w-40 md-down:w-100 m-r-10">
                       Credit Card Number*
                       <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
-                        pattern="[0-9]{16}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="[0-9]{16}" />
+                        pattern="([0-9]{4} ){3}[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="([0-9]{4} ){3}[0-9]{4}" />
                     </label>
                     <div class="flex flex-center m-y-8 md-down:p-b-15">
                       <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/visa-card.svg" alt="" />
@@ -190,7 +190,7 @@
               </div>
 
               <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
-                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 block m-l-auto">Submit
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 block m-l-auto disabled" >Submit
                   payment form</button>
               </div>
 
