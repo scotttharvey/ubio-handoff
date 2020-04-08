@@ -62,6 +62,52 @@
               </label>
             </div>
 
+            <p class="underlined" data-modal-trigger="termsModal">Read the Consent to Electronic Delivery of Disclosures</p>
+            <!-- Start modal content -->
+            <div data-modal-content="termsModal" class="modal hidden sm:p-x-15 is-active">
+              <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                <div class="w-100 text-right">
+                  <span data-modal-trigger="close" class="close -m-t-10">&times;</span>
+                </div>
+                <div class="p-y-30 scrollable-content">
+                  <p class="text-24 p-b-25 thin">Consent to Electronic Delivery of Disclosures</p>
+                  <div>
+                    <p class="p-r-15">The following disclosures apply to your billing accounts and agreements ("Accounts") with AT&T Mobility LLC, Direct TV LLC, AT&T Services Inc. and their affiliates ("we" and "us"). <br/><br/> Consent to Electronic Delivery of Documents. By providing your email address or wireless telephone number and clicking or tapping the "I agree" checkbox as your electronic signature, you agree to receive, through electronic email or SMS text messages, all disclosures, agreements, statements, and notices ("Disclosures") that we are required by law to give you. Once we make the Disclosures available they will govern your relationship with us. We will not ordinarily mail paper Disclosures to you. We will include our Disclosures in emails sent to the email address of record for your account, or, if you elect to receive additional notices by SMS text, to the wireless number(s) you designate for receipt of Disclosures. Some of the Disclosures that we may provide to you include, but are not limited to: <br/><br/> This Consent to Electronic Delivery of Disclosures, <br/><br/> Material changes to existing Terms of Service, <br/><br/> Copies of your periodic billing statements, <br/><br/> Notice of changes to Account terms,<br/><br/>Annual notices of rate changes, and<br/><br/>Responses to disputes you raise.<br/><br/>You agree that certain account-affecting announcements, such as changes to our Privacy Policy or minor updates to previously-agreed terms of service, shall be posted on our websites, including the hyperlink named the "Legal Policy Center" on the footer of every webpage in www.att.com. You also agree that certain account status information, such as upgrade eligibility or past due balances, may also be displayed electronically as alerts appearing in your "myAT&T" online account profile, should you choose to register an ID and Password for myAT&T online access. These various electronic means of display will be available to view, download, screenshot, or print at any time.<br/><br/>You understand that by consenting to receive Disclosures electronically, the consent remains in place until revoked, and that the following apply to your consent:<br/><br/>Your consent is being registered electronically via mouse-click or finger-tap on the "I agree" checkbox associated with an order on your Account; <br/><br/> Unless you consent, you have the right to receive all required Disclosures in paper or non-electronic form; <br/><br/> Even after consent if you want to receive a paper copy of the Disclosure in addition to the electronic Disclosure, you can obtain one free of charge by calling us at the number listed below; <br/><br/>You can withdraw your consent at any time by calling us at the number listed below; and<br/><br/> You agree to provide us with the information (such as a current email address) needed to communicate with you electronically and update us as to any changes in your contact information by calling us at the numbers listed below, or by updating your account profile in myAT&T.<br/><br/>We reserve the right to provide any Disclosures in writing, rather than electronically. Except as otherwise provided in this or other agreements, by law, or on our website, you cannot give us notices electronically, and all notices from you must be in writing. In order to receive the Disclosures electronically, you will need a working connection to the Internet and an active email address.. If you wish to print Disclosures, you will also need access to a suitable printer. <br/><br/>If future technology changes necessitate heightened computer system requirements to continue electronic access to Disclosures, we will give you at least 30 days notice of any such change and the option to withdraw your consent to electronic Disclosures without incurring any fees or charges, following the procedures outlined herein.<br/><br/><span class='text-18'>Our Contact Information</span><br/><br/><strong>Wireless customer service</strong><br/>Every day, 8 a.m. – 9 p.m. local time<br/>800.331.0500<br/><br/><strong>DIRECTV® customer service</strong>Every day, 8 a.m. – midnight ET<br/>800.531.5000</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End modal content -->
+
+            <div class="w-100 p-y-25 md-down:p-b-45 relative ">
+              <label for="termsConditions" class="checkbox">
+                <input type="checkbox" id="termsConditions" data-parsley-required-message="You must check this box in order to continue with your order." name="termsConditions" required class="consent m-r-15 m-0" />
+                <span class="blue-light" tabindex="-1">I agree to the terms and conditions listed above.</span>
+              </label>
+            </div>
+
+            <p class="underlined" data-modal-trigger="customer-agreement">Read the Internet Customer Agreement</p>
+            <!-- Start modal content -->
+            <div data-modal-content="customer-agreement" class="modal hidden sm:p-x-15 is-active">
+              <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                <div class="w-100 text-right">
+                  <span data-modal-trigger="close" class="close">&times;</span>
+                </div>
+                <div class="text-center p-y-30">
+                  <iframe seamless="seamless" frameborder="0" height="400" src="https://www.att.com/legal/terms.internetAttTermsOfService.html#termsofservices" class="w-100"/>
+                </div>
+              </div>
+            </div>
+            <!-- End modal content -->
+
+            <div class="w-100 p-y-25 md-down:p-b-45 relative ">
+              <label for="customerAgreement" class="checkbox">
+                <input type="checkbox" id="customerAgreement" data-parsley-required-message="You must check this box in order to continue with your order." name="customerAgreement" required class="consent m-r-15 m-0" />
+                <span class="blue-light" tabindex="-1">I have read and agreed to the Wireless Customer Agreement and the included provisions for binding individual arbitration.</span>
+              </label>
+            </div>
+
             <div class="p-t-25"></div>
 
             <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
@@ -125,4 +171,5 @@
 <div class="sm:p-y-15"></div>
 
 
+<script type="text/javascript" src="../scripts/modal.js"></script>
 <script type="text/javascript" src="../scripts/form.js"></script>

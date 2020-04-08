@@ -15,6 +15,11 @@
     margin: auto;
     border: 1px solid $gray-light;
     max-width: 720px;
+
+    .scrollable-content {
+      max-height: 400px;
+      overflow-y: scroll;
+    }
   }
 
   .close {
