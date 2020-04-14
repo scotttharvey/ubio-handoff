@@ -1,0 +1,55 @@
+#card-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+
+  * {
+    font-family: $font-aleck;
+    font-weight: 400;
+  }
+
+  label {
+    font-weight: 300;
+    color: #383d43;
+  }
+
+  input,
+  select {
+    border-width: 1px;
+    border-color: #c7cad1;
+    border-radius: 4px;
+  }
+
+  #pan-field {
+    position: relative;
+    padding-right: 50%;
+
+    &::after {
+      position: absolute;
+      height: 100%;
+      width: 49%;
+      right: 0;
+      top: 12px;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url('/images/icons/cards.png');
+      @include medium-down {
+        display: none;
+      }
+
+    }
+  }
+
+  #expiry-field {
+    width: 60%;
+    float: left;
+  }
+
+  #cvv-field {
+    width: 38%;
+    float: right;
+  }
+
+}
