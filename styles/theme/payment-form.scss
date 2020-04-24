@@ -110,6 +110,11 @@
     float: right;
     display: flex;
     flex-direction: column;
+
+    @include small {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 
 }
