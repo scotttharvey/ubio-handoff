@@ -93,7 +93,10 @@
     flex-wrap: wrap;
 
     label { width: 100%; }
-    select { padding: 0 35px 0 10px; }
+    select {
+      padding: 0 35px 0 10px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"><polygon points="12.4 0 14 1.5 7 8 0 1.5 1.6 0 7 4.9"/></svg>');
+    }
   }
 
   #cvv-field {
@@ -101,27 +104,6 @@
     float: right;
     display: flex;
     flex-direction: column;
-  }
-
-  .dropdown {
-    position: relative;
-    height: 40px;
-    background-color: $white;
-    border: solid 1px $blue;
-    margin: 8px auto 18px;
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url('/images/icons/chevron-left.svg');
-      background-color: $white;
-      width: 40px;
-      height: 40px;
-      z-index: 2;
-      content: '';
-    }
-
   }
 
 }
