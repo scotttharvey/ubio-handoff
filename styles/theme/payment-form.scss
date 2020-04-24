@@ -56,13 +56,6 @@
 
   }
 
-  // input,
-  // select {
-  //   border-width: 1px;
-  //   border-color: #c7cad1;
-  //   border-radius: 4px;
-  // }
-
   #pan-field {
     position: relative;
     display: flex;
@@ -99,7 +92,12 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include small {
+      width: 100%;
+    }
+
     label { width: 100%; }
+
   }
 
   #cvv-field {
@@ -109,7 +107,7 @@
     flex-direction: column;
 
     @include small {
-      width: 100%;
+      width: 40%;
       margin-right: 0;
     }
   }
