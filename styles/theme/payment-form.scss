@@ -68,7 +68,8 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      background-image: url('https://ubio-att.netlify.app/cards.0f834a20.png');
+      // background-image: url('https://ubio-att.netlify.app/cards.0f834a20.png');
+      background-image: url('../../images/icons/cards.png');
       @include medium-down {
         display: none;
       }
