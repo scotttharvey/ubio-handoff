@@ -103,9 +103,11 @@
     flex-direction: column;
 
     @include small {
-      width: 40%;
+      width: 50%;
       margin-right: 0;
       float: left;
+
+      label { white-space: nowrap; }
     }
   }
 
