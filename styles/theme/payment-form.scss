@@ -38,6 +38,11 @@
     background-color: white;
     border: solid 1px $gray-border;
 
+    @include small {
+      width: 100%;
+      margin-right: 0;
+    }
+
     &::placeholder {
       color: $gray;
       font-weight: 200;
