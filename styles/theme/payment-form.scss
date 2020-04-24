@@ -44,10 +44,6 @@
     background-color: white;
     border: solid 1px $gray-border;
 
-    @include small {
-      padding-right: 20px;
-    }
-
     &::placeholder {
       color: $gray;
       font-weight: 200;
