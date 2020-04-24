@@ -7,7 +7,7 @@
   * {
     font-family: $font-aleck;
     color: #383d43;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   label {
@@ -101,6 +101,27 @@
     float: right;
     display: flex;
     flex-direction: column;
+  }
+
+  .dropdown {
+    position: relative;
+    height: 40px;
+    background-color: $white;
+    border: solid 1px $blue;
+    margin: 8px auto 18px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('/images/icons/chevron-left.svg');
+      background-color: $white;
+      width: 40px;
+      height: 40px;
+      z-index: 2;
+      content: '';
+    }
+
   }
 
 }
