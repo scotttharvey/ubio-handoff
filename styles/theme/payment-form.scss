@@ -1,6 +1,4 @@
 iframe {
-  border: 0;
-  max-height: 242px;
 
   @include small {
     max-height: 324px;
