@@ -43,6 +43,7 @@
     box-sizing: border-box;
     padding: 10px;
     border-radius: 4px;
+    background-color: white;
     border: solid 1px $gray-border;
 
     &::placeholder {
@@ -51,11 +52,6 @@
       letter-spacing: .5px;
     }
 
-    &.consent {
-      width: auto;
-      margin-top: 0;
-      margin-right: 10px;
-    }
   }
 
   // input,
