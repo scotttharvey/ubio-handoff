@@ -38,11 +38,15 @@
     background-repeat: no-repeat;
     padding: 0 35px 0 10px;
     height: 40px;
-    margin: 8px 8px 18px 0;
+    margin: 8px 0 18px 0;
     box-sizing: border-box;
     border-radius: 4px;
     background-color: white;
     border: solid 1px $gray-border;
+
+    &:first-of-type {
+      margin-right: 8px;
+    }
 
     &::placeholder {
       color: $gray;
@@ -113,6 +117,19 @@
       float: left;
 
       label { white-space: nowrap; }
+    }
+  }
+
+  .invalid-field {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: 'Invalid';
+      font-size: 14px;
+      color: red;
     }
   }
 
