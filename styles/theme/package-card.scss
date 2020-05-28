@@ -12,6 +12,19 @@
 
   &.dtv-tv {
     border-top: 6px solid $blue-dark;
+
+    .bg-blue-to-purple {
+      background: linear-gradient(90deg, rgba(0,87,184,1) 20%, rgba(175,41,187,1) 80%);
+    }
+
+    .channel-circle {
+      width: 75%;
+      height: 100%;
+      padding: 15px;
+      position: relative;
+      background-color: $gray-lightest;
+      border-radius: 100px;
+    }
   }
 
   .label-container {
