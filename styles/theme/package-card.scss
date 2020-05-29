@@ -17,8 +17,12 @@
       background: linear-gradient(90deg, rgba(0,87,184,1) 20%, rgba(175,41,187,1) 80%);
     }
 
+    .bg-red-to-orange {
+      background: linear-gradient(90deg, rgba(255,88,93,1) 20%, rgba(255,176,0,1) 80%);
+    }
+
     .channel-circle {
-      width: 75%;
+      width: 60%;
       height: 100%;
       padding: 15px;
       position: relative;
@@ -125,6 +129,20 @@
     @include small {
       width: 100%;
       padding: 0;
+    }
+
+    &.dtv {
+      width: 33%;
+      margin-bottom: 60px;
+
+      @include medium {
+        width: 50%;
+      }
+
+      @include small {
+        width: 100%;
+        padding: 0;
+      }
     }
   }
 }

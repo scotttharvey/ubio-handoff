@@ -169,6 +169,7 @@
 .l-h-12 { line-height: 12px;}
 .no-underline { text-decoration: none; }
 .underlined { text-decoration: underline; }
+.nowrap { white-space: nowrap; }
 
 // ========================================
 // Font Color Classes
@@ -261,6 +262,7 @@
 .border-radius-4 { border-radius: 4px; }
 .border-white { border: 1px solid $white; }
 .border-blue-light { border: 1px solid $blue-light; }
+.border-blue-dark { border: 1px solid $blue-dark; }
 .border-gray-light { border: 1px solid $gray-light; }
 .border-blue-light-2 { border: 2px solid $blue-light; }
 .border-purple-light { border: solid 1px $purple-light; }
@@ -288,6 +290,7 @@
 .w-20px { width: 20px; }
 .w-25px { width: 25px; }
 .w-35px { width: 35px; }
+.w-270px { width: 275px; }
 
 .max-w-120 { max-width: 120px; }
 .max-w-200 { max-width: 200px; }
