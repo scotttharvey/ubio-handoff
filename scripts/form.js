@@ -1,6 +1,7 @@
 import $ from "jquery";
 import parsley from 'parsleyjs'
-const options = $('.install-option');
+const installOptions = $('.install-option');
+const deviceCard = $('.device-card');
 const scrollOnSmall = $('.fixed-submit button');
 
 
@@ -33,11 +34,29 @@ $('form').on('submit', e => {
   console.log('form submission: ', $(e.target).serialize())
 })
 
-options.on('change', (e) => {
-  const input = options.find('[name="installMethod"]:checked');
+installOptions.on('change', (e) => {
+  const input = installOptions.find('[name="installMethod"]:checked');
 
   $('.install-option').removeClass('border-blue-light');
 
   input.closest('.install-option').toggleClass('border-blue-light')
+
+});
+
+// By default - Set Devices to 1 onload
+$('[name="devices"]').filter('[value="1 device"]').prop('checked', true);
+
+deviceCard.on('change', (e) => {
+  const input = deviceCard.find('[name="devices"]:checked');
+  $('.device-card').removeClass('bg-blue-dark');
+  $(e.currentTarget).toggleClass('bg-blue-dark');
+
+  if ($(e.currentTarget).data('activation-fee')) {
+    const fee = $(e.currentTarget).data('activation-fee');
+    $('.activation-fee').removeClass('hidden');
+    $('.activation-fee .amount').html(fee);
+  } else {
+    $('.activation-fee').addClass('hidden');
+  }
 
 });

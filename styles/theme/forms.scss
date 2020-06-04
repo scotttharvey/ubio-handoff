@@ -2,6 +2,16 @@
 
   .radio-section {
 
+    p {
+      color: inherit;
+    }
+
+    &.bg-blue-dark {
+      p {
+        color: $white;
+      }
+    }
+
     @include medium-down {
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -19,6 +29,17 @@
       display: inline-flex;
       cursor: pointer;
       position: relative;
+
+      &.device-option {
+
+        input {
+          border: 1px solid $blue-dark;
+
+          &:checked + .inputFill::before {
+            display: none;
+          }
+        }
+      }
 
       input {
         height: 40px;

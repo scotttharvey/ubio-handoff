@@ -192,12 +192,12 @@
                   </div>
                 </div>
                 <p class="blue-dark text-14 text-center m-b-25">See full channel lineup</p>
-                <button class="add-cart-btn" data-modal-trigger="internet">
+                <button class="add-cart-btn" data-modal-trigger="directv-devices">
                   Add to Cart
                 </button>
                 <!-- Start modal content -->
-                <div data-modal-content="internet" class="modal hidden sm:p-x-15 is-active">
-                  <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                <div data-modal-content="directv-devices" class="modal hidden sm:p-x-15 is-active">
+                  <div class="modal-content p-25 sm:p-x-15 w-60 md-down:w-100">
                     <div class="w-100 text-right">
                       <span data-modal-trigger="close" class="close -m-t-10">&times;</span>
                     </div>
@@ -205,21 +205,102 @@
                       <div class="p-b-15 m-b-15 border-bottom-gray">
                         <div class="p-10 sm:p-x-15 flex space-between align-center sm:flex-column">
                           <p class="icon text-18 check-circle sm:p-b-15">
-                            Internet 1000 has been added to your cart
+                            DirecTV Choice All-Included has been added to your cart!
                           </p>
-                          <button class="btn bg-blue-dark white p-x-25 p-y-8 block m-l-auto">Checkout</button>
                         </div>
                       </div>
                       <div class="w-100 flex sm:flex-column space-between">
-                        <div class="w-60 sm:w-100 p-r-10">
-                          <p class="text-24 thin p-b-15">Great Internet Deserves Great TV</p>
-                          <p class="p-b-15">Tired of missing the big game or cliff-hanger season finale? Thanks to 500 hours of Cloud DVR storage, you don’t have to. Bundle now to double your savings, plus use voice remote with the Google Assistant to find everything you want without leaving your couch.</p>
-                          <p class="text-12 p-b-25">Recordings expire after 90 days. Restrictions apply. Google is a trademark of Google LLC. Google login required.</p>
-                          <button class="btn p-y-8 p-x-45 white bg-blue-dark ">See DirecTV Packages</button>
+                        <div class="w-50 sm:w-100 p-r-10">
+                          <p class="text-18 thin p-b-15">Equipment for your new DirecTV service</p>
+                          <img src="../images/icons/cards.png" alt="" class="m-b-15">
+                          <p class="p-b-15 text-14">Take advantage of DIRECTV Whole-Home DVR with a Genie. Enjoy a full HD DVR experience in every room. Record any 5 shows at the same time, all in HD. Record up to 200 hours in HD.</p>
                         </div>
 
-                        <div class="w-40 sm:hidden">
-                          <img src="../images/icons/pro-install.svg" alt="">
+                        <div class="w-50 sm:hidden">
+                          <form class="w-100 flex flex-wrap form-container space-between p-l-30">
+
+                            <section class="device-card bg-blue-dark radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-1" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-1" name="devices" value="1 device" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">1</span>
+                                </div>
+                                <p>device</p>
+                                <p>inluded</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-2" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-2" name="devices" value="2 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">2</span>
+                                </div>
+                                <p class="blue-dark">devices</p>
+                                <p>$7/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-3" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-3" name="devices" value="3 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">3</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$14/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-4" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-4" name="devices" value="4 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">4</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$21/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15" data-activation-fee="49">
+                              <label for="devices-5" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-5" name="devices" value="5 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">5</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$28/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15" data-activation-fee="98">
+                              <label for="devices-6" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-6" name="devices" value="6 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">6</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$35/mo</p>
+                              </label>
+                            </section>
+
+                            <div class="w-100 activation-fee hidden flex bg-gray-lightest p-10 p-y-15 m-b-30">
+                              <div class="w-75">
+                                <p class="bold text-18">One-time activation fee</p>
+                                <p>Required for 4+ devices</p>
+                              </div>
+                              <div class="w-25 flex flex-end">
+                                <p class="text-24 thin">$</p>
+                                <p class="text-24 thin amount">49</p>
+                              </div>
+                            </div>
+
+                            <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+                              <button class="btn bg-blue-dark white p-x-45 right p-y-8 btn-shadow border-blue-dark">Next</button>
+                            </div>
+
+                          </form>
                         </div>
                       </div>
                     </div>
