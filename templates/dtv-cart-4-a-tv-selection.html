@@ -197,7 +197,7 @@
                 </button>
                 <!-- Start Equipment Selection Modal content -->
                 <div data-modal-content="directv-devices" class="modal hidden sm:p-x-15 is-active">
-                  <div class="modal-content p-25 sm:p-x-15 w-60 md-down:w-100">
+                  <div class="modal-content sm:scrollable-content p-25 sm:p-x-15 w-60 md-down:w-100">
                     <div class="w-100 text-right">
                       <span data-modal-trigger="close" class="close -m-t-10">&times;</span>
                     </div>
@@ -212,12 +212,12 @@
                       <div class="w-100 flex sm:flex-column space-between">
                         <div class="w-50 sm:w-100 p-r-10">
                           <p class="text-20 thin p-b-15">Equipment for your new DirecTV service</p>
-                          <img src="../images/dtv-device.png" alt="" class="m-b-15 w-100">
+                          <img src="../images/dtv-device.png" alt="" class="m-b-15 w-100 sm:hidden">
                           <p class="p-b-15 text-14">Take advantage of DIRECTV Whole-Home DVR with a Genie. Enjoy a full HD DVR experience in every room. Record any 5 shows at the same time, all in HD. Record up to 200 hours in HD.</p>
                         </div>
 
-                        <div class="w-50 sm:hidden">
-                          <form class="w-100 flex flex-wrap form-container space-between p-l-30">
+                        <div class="w-50 sm:w-100">
+                          <form class="w-100 flex flex-wrap flex-center form-container">
 
                             <section class="device-card bg-blue-dark radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
                               <label for="devices-1" class="big-radio device-option flex flex-column">
@@ -296,8 +296,8 @@
                               </div>
                             </div>
 
-                            <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
-                              <button class="btn bg-blue-dark white p-x-45 right p-y-8 btn-shadow border-blue-dark">Next</button>
+                            <div class="flex flex-end sm:flex-center w-100 bg-white ">
+                              <button class="btn bg-blue-dark white p-x-45 right p-y-8 m-r-10 sm:m-0 btn-shadow border-blue-dark">Next</button>
                             </div>
 
                           </form>

@@ -396,6 +396,12 @@
     padding-left: 45px;
   }
 
+  .sm\:flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .sm\:flex-start {
     display: flex;
     justify-content: start;

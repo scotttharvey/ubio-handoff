@@ -16,7 +16,15 @@
     border: 1px solid $gray-light;
     max-width: 720px;
 
-    .scrollable-content {
+  }
+
+  .scrollable-content {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .sm\:scrollable-content {
+    @include small {
       max-height: 400px;
       overflow-y: scroll;
     }
