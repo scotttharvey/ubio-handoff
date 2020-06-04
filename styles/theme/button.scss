@@ -5,6 +5,7 @@ button { cursor: pointer; }
   font-size: 18px;
   line-height: 24px;
   border-radius: 4px;
+  border-color: inherit;
 
   &.disabled {
     background-color: $gray-dark;
