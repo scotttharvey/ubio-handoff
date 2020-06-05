@@ -15,6 +15,12 @@
   }
 
   &.check-circle {
+    &.top-2 {
+      &::before {
+        top: 2;
+      }
+    }
+
     &::before {
       position: absolute;
       left: 0;
