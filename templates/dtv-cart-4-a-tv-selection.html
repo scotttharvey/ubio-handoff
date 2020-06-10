@@ -60,10 +60,23 @@
 
       <section class="w-100 content">
 
-        <div class="gray-darkest">
-          <h1 class="h3 gray-darkest thin p-b-15">Bundle with DirecTV Package</h1>
-          <p class="gray-dark p-b-15">Showing 6 products</p>
-          <p class="m-b-25">Choose any package below to start designing your home viewing experience </p>
+        <div class="gray-darkest w-100 flex space-between sm:flex-column align-center m-b-25">
+          <div class="w-50 sm:w-100">
+            <h1 class="h3 gray-darkest thin p-b-15">Bundle with DirecTV Package</h1>
+            <p class="gray-dark p-b-15">Showing 6 products</p>
+            <p class="p-b-25 sm:p-b-15">Choose any package below to start designing your home viewing experience </p>
+          </div>
+          <div class="w-25 sm:w-100 sm:p-b-25">
+            <div class="w-100">
+              <label for="sortBy">
+                Sort by
+              </label>
+              <select name="sortBy" id="sortBy" class="w-100 dropdown p-y-8 p-x-5 m-t-5">
+                <option value="low">Price: low to high</option>
+                <option value="high">Price: high to low</option>
+              </select>
+            </div>
+          </div>
         </div>
 
         <section class="flex sm:column-reverse space-between">
@@ -527,7 +540,7 @@
             </div>
 
             <div class="content dtv">
-              <div class="package-card dtv-tv">
+              <div class="package-card dtv-tv highest">
                 <div class="label-container">
                   <p class="label">
                     NFL Sunday Ticket Included
@@ -637,7 +650,7 @@
               </div>
             </div>
 
-            <p class="content w-100 text-12">*$19.95 ACTIVATION, EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., EQUIPMENT NON-RETURN & ADD’L FEES APPLY. Price after $5/mo. autopay & paperless bill and $10/mo. bundle discounts for up to 12 mos each. Discounts start w/in 3 bills. New approved residential customers only (equipment lease req’d). Credit card req’d (except MA & PA). Restr’s apply.</p>
+            <p class="content w-100 text-12 active-text">*$19.95 ACTIVATION, EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., EQUIPMENT NON-RETURN & ADD’L FEES APPLY. Price after $5/mo. autopay & paperless bill and $10/mo. bundle discounts for up to 12 mos each. Discounts start w/in 3 bills. New approved residential customers only (equipment lease req’d). Credit card req’d (except MA & PA). Restr’s apply.</p>
 
           </div>
 
@@ -649,4 +662,5 @@
   </div>
 
   <script type="text/javascript" src="../index.js"></script>
+  <script type="text/javascript" src="../scripts/sortBy.js"></script>
   <script type="text/javascript" src="../scripts/cart.js"></script>
