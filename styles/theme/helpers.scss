@@ -267,6 +267,7 @@
 .card-shadow { box-shadow: 0 4px 8px 0 rgba(56, 61, 67, 0.3); }
 .box-shadow { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 .border-radius-4 { border-radius: 4px; }
+.border-radius-100 { border-radius: 100px; }
 .border-white { border: 1px solid $white; }
 .border-blue-light { border: 1px solid $blue-light; }
 .border-blue-dark { border: 1px solid $blue-dark; }
@@ -275,6 +276,7 @@
 .border-purple-light { border: solid 1px $purple-light; }
 
 .border-top-blue-light { border-top: 6px solid $blue-light; }
+.border-top-blue-dark { border-top: 6px solid $blue-dark; }
 .border-bottom-gray { border-bottom: 1px solid $gray; }
 .border-top-gray { border-top: 1px solid $gray; }
 .border-top-gray-dark { border-top: 1px solid $gray-dark; }
