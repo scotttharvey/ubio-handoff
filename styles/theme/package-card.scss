@@ -13,13 +13,6 @@
   &.dtv-tv {
     border-top: 6px solid $blue-dark;
 
-    .bg-blue-to-purple {
-      background: linear-gradient(90deg, rgba(0,87,184,1) 20%, rgba(175,41,187,1) 80%);
-    }
-
-    .bg-red-to-orange {
-      background: linear-gradient(90deg, rgba(255,88,93,1) 20%, rgba(255,176,0,1) 80%);
-    }
 
     .channel-circle {
       height: 100%;
@@ -29,6 +22,14 @@
       background-color: $gray-lightest;
       border-radius: 100px;
     }
+  }
+
+  .bg-blue-to-purple {
+    background: linear-gradient(90deg, rgba(0,87,184,1) 20%, rgba(175,41,187,1) 80%);
+  }
+
+  .bg-red-to-orange {
+    background: linear-gradient(90deg, rgba(255,88,93,1) 20%, rgba(255,176,0,1) 80%);
   }
 
   .label-container {
@@ -81,12 +82,24 @@
     }
 
     .change {
+      position: relative;
       font-size: 18px;
+
+      &.duration-after {
+        &::after {
+          position: absolute;
+          content: '/mo';
+          font-size: 12px;
+          bottom: 8px;
+          left: 0;
+        }
+      }
+
     }
   }
 
   .speed {
-    padding: 10px 50px 20px;
+    padding: 10px 40px 20px;
     .box {
       padding: 10px;
       background-color: #f0f0f0;
