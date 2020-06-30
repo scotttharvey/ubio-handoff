@@ -44,6 +44,18 @@
     }
   }
 
+  &.channel-lineup {
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('/images/icons/channel-lineup.svg');
+      width: 20px;
+      height: 20px;
+      content: '';
+    }
+  }
+
   &.chevron-left {
     &::before {
       position: absolute;
