@@ -35,7 +35,7 @@ $('form').on('submit', e => {
 })
 
 installOptions.on('change', (e) => {
-  const input = installOptions.find('[name="installMethod"]:checked');
+  const input = installOptions.find('[type="radio"]:checked');
 
   $('.install-option').removeClass('border-blue-light');
 
