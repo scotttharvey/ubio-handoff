@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-    // If user clicks anywhere outside of the modal, close it
+  // If user clicks anywhere outside of the modal, close it
   window.onclick = e => {
     if (!e.target.dataset.modalTrigger ) {
       closeModals()

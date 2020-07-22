@@ -1,4 +1,3 @@
-
 const sortBy = document.querySelector('#sortBy');
 
 sortBy.addEventListener('change', (e) => {
