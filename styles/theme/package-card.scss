@@ -13,7 +13,6 @@
   &.dtv-tv {
     border-top: 6px solid $blue-dark;
 
-
     .channel-circle {
       height: 100%;
       align-self: flex-start;
@@ -100,6 +99,7 @@
 
   .speed {
     padding: 10px 40px 20px;
+
     .box {
       padding: 10px;
       background-color: #f0f0f0;
@@ -122,7 +122,6 @@
       background-color: $gray-dark;
     }
   }
-
 }
 
 .package-cards-container {
