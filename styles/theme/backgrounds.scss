@@ -5,8 +5,8 @@
 }
 
 .bg-family-hero {
-
   position: relative;
+
   &::after {
     position: absolute;
     height: 100%;
@@ -47,8 +47,8 @@
 }
 
 .bg-error-hero {
-
   position: relative;
+
   &::after {
     position: absolute;
     height: 100%;
@@ -68,8 +68,8 @@
 }
 
 .bg-error-timeout {
-
   position: relative;
+
   &::after {
     position: absolute;
     height: 100%;
