@@ -1,6 +1,7 @@
 import $ from "jquery";
 import parsley from 'parsleyjs'
 const installOptions = $('.install-option');
+const idOptions = $('.id-option');
 const deviceCard = $('.device-card');
 const scrollOnSmall = $('.fixed-submit button');
 
@@ -40,6 +41,17 @@ installOptions.on('change', (e) => {
   $('.install-option').removeClass('border-blue-light');
 
   input.closest('.install-option').toggleClass('border-blue-light')
+
+});
+
+idOptions.on('change', (e) => {
+  const input = idOptions.find('[type="radio"]:checked');
+
+  $('.id-option').removeClass('border-blue-light');
+  $('.id-form').addClass('hidden')
+
+  input.closest('.id-option').find('.id-form').toggleClass('hidden')
+  input.closest('.id-option').toggleClass('border-blue-light');
 
 });
 

@@ -65,12 +65,12 @@
               <p class="text-18 thin m-b-15 icon lock">Credit Check</p>
               <p class="text-14 thin m-b-15">To determine service eligibility for internet service, and to complete your order, we will initiate a credit check with a credit bureau or use your existing credit information on file with other AT&T companies.</p>
 
-              <section class="ssn-section install-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-25">
+              <section class="ssn-section id-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-25">
 
                 <div class="w-25 md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section">
                   <div class="radio-container w-25 md-down:w-100">
-                    <label for="freeProfessionalInstall" class="big-radio" >
-                      <input type="radio" id="freeProfessionalInstall" name="installMethod" value="Professional Install" class="freeProfessionalInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                    <label for="ssnRadio" class="big-radio" >
+                      <input type="radio" id="ssnRadio" name="idMethod" value="Professional Install" class="ssnRadio m-r-15 m-0" required  data-parsley-required-message="SSN and Birthday required" data-parsley-errors-container="#idMethodError" />
                       <span class="inputFill"></span>
                     </label>
                   </div>
@@ -95,30 +95,32 @@
                   </div>
                 </div>
 
-                <div class="ssn-form w-100 flex flex-wrap p-t-25 p-l-45">
-                  <div class="w-33 md-down:w-100">
-                    <label for="SSN">
-                      SSN*
-                    </label>
-                    <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
-                  </div>
+                <div class="id-form hidden">
+                  <div class="ssn-form w-100 flex flex-wrap p-t-25 p-l-45">
+                    <div class="w-33 md-down:w-100">
+                      <label for="SSN">
+                        SSN*
+                      </label>
+                      <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+                    </div>
 
-                  <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
-                    <label for="birthday">
-                      Date of Birth*
-                    </label>
-                    <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
-                  </div>
+                    <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
+                      <label for="birthday">
+                        Date of Birth*
+                      </label>
+                      <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                    </div>
 
+                  </div>
                 </div>
               </section>
 
-              <section class="other-id-section install-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-30">
+              <section class="other-id-section id-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-30">
 
                 <div class="w-40px md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section m-r-10">
                   <div class="radio-container w-25 md-down:w-100">
-                    <label for="freeProfessionalInstall" class="big-radio" >
-                      <input type="radio" id="freeProfessionalInstall" name="installMethod" value="Professional Install" class="freeProfessionalInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                    <label for="otherID" class="big-radio" >
+                      <input type="radio" id="otherID" name="idMethod" value="Professional Install" class="otherID m-r-15 m-0" required  data-parsley-required-message="Other ID required" data-parsley-errors-container="#idMethodError" />
                       <span class="inputFill"></span>
                     </label>
                   </div>
@@ -139,21 +141,23 @@
                   </div>
                 </div>
 
-                <div class="other-id-form hidden w-100 flex flex-wrap p-t-25 p-l-55">
-                  <div class="w-33 md-down:w-100">
-                    <label for="SSN">
-                      SSN*
-                    </label>
-                    <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
-                  </div>
+                <div class="id-form hidden">
+                  <div class="other-id-form w-100 flex flex-wrap p-t-25 p-l-55">
+                    <div class="w-33 md-down:w-100">
+                      <label for="SSN">
+                        SSN*
+                      </label>
+                      <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+                    </div>
 
-                  <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
-                    <label for="birthday">
-                      Date of Birth*
-                    </label>
-                    <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
-                  </div>
+                    <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
+                      <label for="birthday">
+                        Date of Birth*
+                      </label>
+                      <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                    </div>
 
+                  </div>
                 </div>
               </section>
 
