@@ -102,6 +102,8 @@
                         SSN*
                       </label>
                       <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+                      <input id="SSN-mask" placeholder="000-00-0000" class="hidden SSN-mask" />
+                      <div id="ssnError"></div>
                     </div>
 
                     <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
@@ -109,6 +111,8 @@
                         Date of Birth*
                       </label>
                       <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                      <input id="birthday-mask" placeholder="MM/DD/YYYY" class="hidden birthday-mask" />
+                      <div id="birthdayError"></div>
                     </div>
 
                   </div>
