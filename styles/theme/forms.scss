@@ -1,79 +1,5 @@
 .form-container {
 
-  .radio-section {
-
-    p {
-      color: inherit;
-    }
-
-    &.bg-blue-dark {
-      p {
-        color: $white;
-      }
-    }
-
-    @include medium-down {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .radio-container {
-      @include medium-down {
-        display: flex;
-        justify-content: flex-end;
-      }
-    }
-
-    .big-radio {
-      display: inline-flex;
-      cursor: pointer;
-      position: relative;
-
-      &.device-option {
-
-        input {
-          border: 1px solid $blue-dark;
-
-          &:checked + .inputFill::before {
-            display: none;
-          }
-        }
-      }
-
-      input {
-        height: 40px;
-        width: 40px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -o-appearance: none;
-        appearance: none;
-        margin-top: auto;
-        margin-bottom: auto;
-        border: 1px solid $blue-light;
-        border-radius: 20px;
-        outline: none;
-        transition-duration: 0.3s;
-        cursor: pointer;
-        padding: 7px;
-
-
-        &:checked + .inputFill::before {
-          background-image: url('/images/icons/check-blue-filled.svg');
-          width: 42px;
-          height: 42px;
-          content: '';
-          display: block;
-          text-align: center;
-          color: $blue;
-          position: absolute;
-          left: -1px;
-          top: -1px;
-        }
-      }
-    }
-  }
-
   label {
     font-size: 14px;
     font-weight: 300;
@@ -103,26 +29,101 @@
     }
   }
 
-  .dropdown {
-    position: relative;
-    height: 40px;
-    background-color: $white;
-    border: solid 1px $blue;
-    margin: 8px auto 18px;
+}
 
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url('/images/icons/chevron-left.svg');
-      background-color: $white;
-      width: 40px;
-      height: 40px;
-      z-index: 2;
-      content: '';
+.radio-section {
+
+  p {
+    color: inherit;
+  }
+
+  &.bg-blue-dark {
+    p {
+      color: $white;
+    }
+  }
+
+  @include medium-down {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .radio-container {
+    @include medium-down {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .big-radio {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+
+    &.device-option {
+
+      input {
+        border: 1px solid $blue-dark;
+
+        &:checked + .inputFill::before {
+          display: none;
+        }
+      }
     }
 
+    input {
+      height: 40px;
+      width: 40px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      margin-top: auto;
+      margin-bottom: auto;
+      border: 1px solid $blue-light;
+      border-radius: 20px;
+      outline: none;
+      transition-duration: 0.3s;
+      cursor: pointer;
+      padding: 7px;
+
+
+      &:checked + .inputFill::before {
+        background-image: url('/images/icons/check-blue-filled.svg');
+        width: 42px;
+        height: 42px;
+        content: '';
+        display: block;
+        text-align: center;
+        color: $blue;
+        position: absolute;
+        left: -1px;
+        top: -1px;
+      }
+    }
   }
+}
+
+.dropdown {
+  position: relative;
+  height: 40px;
+  background-color: $white;
+  border: solid 1px $gray-border;
+  margin: 8px auto 18px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('/images/icons/chevron-left.svg');
+    background-color: $white;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    content: '';
+  }
+
 }
 
 .checkbox {

@@ -61,33 +61,168 @@
               </label>
             </div>
 
-            <div class="creditcheck border-blue-light p-y-25 p-x-20 sm:p-x-15 flex flex-column w-100">
+            <div class="creditcheck border-blue-light p-t-25 p-b-10 p-x-20 sm:p-x-15 flex flex-column w-100">
               <p class="text-18 thin m-b-15 icon lock">Credit Check</p>
-              <p class="text-14 m-b-15">To complete your order, we need a few details to check your credit. We'll use your existing credit info that may be on file with other AT&T companies and/or a credit bureau.</p>
-              <div class="w-100 flex flex-wrap">
-                <div class="w-33 md-down:w-100">
-                  <label for="SSN">
-                    SSN*
-                  </label>
-                  <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+              <p class="text-14 thin m-b-15">To determine service eligibility for internet service, and to complete your order, we will initiate a credit check with a credit bureau or use your existing credit information on file with other AT&T companies.</p>
+
+              <section class="ssn-section install-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-25">
+
+                <div class="w-25 md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section">
+                  <div class="radio-container w-25 md-down:w-100">
+                    <label for="freeProfessionalInstall" class="big-radio" >
+                      <input type="radio" id="freeProfessionalInstall" name="installMethod" value="Professional Install" class="freeProfessionalInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                      <span class="inputFill"></span>
+                    </label>
+                  </div>
+
+                  <div class="w-70 md-down:w-100">
+                    <img src="/images/icons/ssn-shield.svg" alt="" class="max-w-120"/>
+                  </div>
                 </div>
 
-                <div class="w-33 md-down:w-100 p-l-25 md-down:p-0">
-                  <label for="birthday">
-                    Date of Birth*
-                  </label>
-                  <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                <div class="w-75 md-down:w-100 flex space-between flex-wrap p-l-10 md-down:p-0">
+                  <div>
+                    <div class="flex space-between">
+                      <p class="text-18 thin blue-dark p-b-15">Use my social security number (SSN)</p>
+                      <p class="text-18 thin text-right -m-t-5 lg-up:hidden">Preferred</p>
+                    </div>
+                  </div>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-18 thin">Preferred</p>
+                  </div>
+                  <div class="w-100">
+                    <p class="text-14 gray-dead thin p-r-15">AT&T will be able to retrieve the most accurate credit report and give you the best online shopping experience with this secured option.</p>
+                  </div>
                 </div>
 
-                <div class="w-33 sm:w-50 p-l-25 sm:p-0 flex align-center p-b-10">
-                  <img src="/images/icons/verisign-secured.svg" alt="" class="w-50 sm:w-60">
+                <div class="ssn-form w-100 flex flex-wrap p-t-25 p-l-45">
+                  <div class="w-33 md-down:w-100">
+                    <label for="SSN">
+                      SSN*
+                    </label>
+                    <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+                  </div>
+
+                  <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
+                    <label for="birthday">
+                      Date of Birth*
+                    </label>
+                    <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                  </div>
+
+                </div>
+              </section>
+
+              <section class="other-id-section install-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-30">
+
+                <div class="w-40px md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section m-r-10">
+                  <div class="radio-container w-25 md-down:w-100">
+                    <label for="freeProfessionalInstall" class="big-radio" >
+                      <input type="radio" id="freeProfessionalInstall" name="installMethod" value="Professional Install" class="freeProfessionalInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                      <span class="inputFill"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="flex-1 md-down:w-100 flex space-between flex-wrap p-l-10 md-down:p-0">
+                  <div>
+                    <div class="flex space-between">
+                      <p class="text-18 thin blue p-b-15">Use my driver’s license or other forms of ID</p>
+                      <p class="text-18 thin text-right -m-t-5 lg-up:hidden">Less preferred</p>
+                    </div>
+                  </div>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-18 thin">Less preferred</p>
+                  </div>
+                  <div class="w-100">
+                    <p class="text-14 gray-dead thin p-r-15">AT&T might require a specialist to review this order and your credit report. You might not be able to complete this order online.</p>
+                  </div>
+                </div>
+
+                <div class="other-id-form hidden w-100 flex flex-wrap p-t-25 p-l-55">
+                  <div class="w-33 md-down:w-100">
+                    <label for="SSN">
+                      SSN*
+                    </label>
+                    <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+                  </div>
+
+                  <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
+                    <label for="birthday">
+                      Date of Birth*
+                    </label>
+                    <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                  </div>
+
+                </div>
+              </section>
+
+              <div class="w-100 flex flex-start flex-column checkbox-container p-b-10">
+                <label for="sameAddress" class="checkbox flex flex-start" >
+                  <input type="checkbox" id="sameAddress" name="sameAddress" value="sameAddress" class="consent" />
+                  <span class="gray-dead" tabindex="-1">Use same address as service address as billing address</span>
+                </label>
+              </div>
+
+              <div class="billingAddress w-100 p-b-15">
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-66 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="billingAddress">
+                      Billing Address*
+                    </label>
+                    <input id="billingAddress" name="billingAddress" type="text" required />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="addressType">
+                      Apt./Suite/Bldg.
+                    </label>
+                    <input id="addressType" name="addressType" type="text" required />
+                  </div>
+                </div>
+
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="city">
+                      City*
+                    </label>
+                    <input id="city" name="city" type="text" required />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="state">
+                      State*
+                    </label>
+                    <select name="state" id="state" class="w-100 dropdown" required>
+                      <option value="test">Test Val 1</option>
+                      <option value="test">Test Val 2</option>
+                      <option value="test">Test Val 3</option>
+                      <option value="test">Test Val 4</option>
+                      <option value="test">Test Val 5</option>
+                    </select>
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="zip">
+                      Zipcode*
+                    </label>
+                    <input id="address-zip" name="zip" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
+                  </div>
                 </div>
               </div>
+
+              <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
+                <div class="m-t-3 md-down:hidden">
+                  <img src="./../images/icons/card-blue.svg" alt="" class="w-25px h-25px"/>
+                </div>
+                <div class="m-l-10">
+                  <p class="text-24 thin p-b-10">A heads up on your billing address...</p>
+                  <p class="text-14 p-b-10">You will provide payment information for any deposit or up-front charges (if any) in a little bit, but we ask that you use a credit card from the same billing zipcode as the address below for credit check. </p>
+                </div>
+              </div>
+
             </div>
 
             <div class="flex flex-end w-100 p-t-25">
 
-              <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+              <div class="flex flex-end w-100 bg-white sm:fixed-submit">
                 <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-65 disabled" data-modal-trigger="money-deposit" >Next</button>
               </div>
               <!-- Start modal content -->
