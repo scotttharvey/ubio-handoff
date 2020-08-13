@@ -55,6 +55,25 @@ idOptions.on('change', (e) => {
 
 });
 
+// Other ID section
+// hide all options
+$('.multi-option .option-val').addClass('hidden')
+// Show Driver Options by default
+$('.multi-option .option-val.driver').removeClass('hidden');
+
+$('#idType').on('input', (e) => {
+  console.log(e.currentTarget.value);
+  $('.multi-option .option-val').addClass('hidden');
+
+  $(`.multi-option .option-val.${e.currentTarget.value}`).removeClass('hidden');
+
+})
+// driver
+// state
+// military
+// passport
+// foreign
+
 $('#SSN').val("");
 $('#birthday').val("");
 

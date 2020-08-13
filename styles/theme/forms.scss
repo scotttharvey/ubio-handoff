@@ -110,12 +110,13 @@
   height: 40px;
   background-color: $white;
   border: solid 1px $gray-border;
+  padding-left: 5px;
   margin: 8px auto 18px;
 
   &::after {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 2px;
     background-image: url('/images/icons/chevron-left.svg');
     background-color: $white;
     width: 40px;
