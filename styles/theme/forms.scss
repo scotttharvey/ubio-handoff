@@ -105,6 +105,13 @@
   }
 }
 
+.id-option {
+  opacity: .6;
+  &.border-blue-light {
+    opacity: 1;
+  }
+}
+
 .dropdown {
   position: relative;
   height: 40px;
