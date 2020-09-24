@@ -1,12 +1,12 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./../styles/index.scss">
+<div class="container row w-100 bg-white">
 
   <form id="card-form" style="display: block; visibility: visible;">
     <div id="pan-field" class="invalid-field"><label for="pan">Card number</label><input type="tel" name="pan" id="pan" maxlength="19"
-        placeholder="XXXX XXXX XXXX XXXX"></div>
-    <div id="name-field"><label for="name">Name on card</label><input type="text" name="name" id="name" placeholder="">
+        placeholder="XXXX XXXX XXXX XXXX"/></div>
+    <div id="name-field"><label for="name">Name on card</label><input type="text" name="name" id="name" placeholder=""/>
     </div>
     <div id="expiry-field" class="invalid-field"><label>Expiry date</label>
       <select id="expiry-month" name="expiry-month" class="expiry-month">
@@ -38,7 +38,7 @@
         <option value="2029">2029</option>
       </select></div>
     <div id="cvv-field" class="invalid-field"><label for="cvv">Security number</label><input type="tel" name="cvv" id="cvv" maxlength="4"
-        placeholder=""></div>
+        placeholder=""/></div>
   </form>
 
-
+</div>

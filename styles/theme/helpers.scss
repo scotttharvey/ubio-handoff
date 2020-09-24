@@ -2,6 +2,7 @@
 // Margin Classes
 // ========================================
 .m-0 { margin: 0; }
+.m-auto { margin: auto; }
 .m-t-3 { margin-top: 3px; }
 .m-t-5 { margin-top: 5px; }
 .m-t-15 { margin-top: 15px; }
@@ -20,15 +21,15 @@
 .m-b-15-small { @include small { margin-bottom: 15px; } }
 .m-b-30-medium-up { @include medium-up { margin-bottom: 30px; } }
 .m-b-30-large-up { @include large-up { margin-bottom: 30px; } }
+.m-r-auto { margin-right: auto; }
 .m-r-5 { margin-right: 5px; }
 .m-r-10 { margin-right: 10px; }
 .m-r-15 { margin-right: 15px; }
 .m-r-25 { margin-right: 25px; }
+.m-l-auto { margin-left: auto; }
 .m-l-10 { margin-left: 10px; }
 .m-l-15 { margin-left: 15px; }
 .m-l-25 { margin-left: 25px; }
-.m-auto { margin: auto; }
-.m-l-auto { margin-left: auto; }
 .-m-t-3 { margin-top: -3px;}
 .-m-t-5 { margin-top: -5px;}
 .-m-t-10 { margin-top: -10px;}
@@ -178,7 +179,7 @@
 .l-h-12 { line-height: 12px;}
 .no-underline { text-decoration: none; }
 .underlined { text-decoration: underline; }
-.nowrap { white-space: nowrap; }
+.nowrap, .no-wrap { white-space: nowrap; }
 
 // ========================================
 // Font Color Classes
@@ -234,8 +235,9 @@
 .italic { font-style: italic; }
 
 .legal {
-  font-size: 10px;
-  line-height: 12px;
+  font-family: $aleckCdLight;
+  font-size: 12px;
+  line-height: 1.33;
 }
 
 
@@ -381,6 +383,9 @@
   .sm\:m-w-300 { max-width: 300px; }
 
   .sm\:m-0 { margin: 0; }
+  .sm\:m-t-10 { margin-top: 10px; }
+  .sm\:m-t-15 { margin-top: 15px; }
+  .sm\:m-t-25 { margin-top: 25px; }
   .sm\:p-0 { padding: 0; }
   .sm\:p-t-0 { padding-top: 0; }
   .sm\:p-t-10 { padding-top: 10px; }

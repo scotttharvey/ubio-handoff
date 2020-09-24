@@ -1,48 +1,69 @@
 @font-face {
-  font-family: aleckcd;
-  font-style: normal;
-  font-weight: 200;
-  src: url("./../fonts/attaleckcd_lt.woff") format("woff"), url("./../fonts/attaleckcd_lt.ttf") format("truetype");
+  font-family: aleckCdLight;
+  src: url("./../fonts/ATTAleckCd_Lt.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: aleckcd;
-  font-style: normal;
-  font-weight: 500;
-  src: url("./../fonts/attaleckcd_md.woff") format("woff"), url("./../fonts/attaleckcd_md.ttf") format("truetype");
+  font-family: aleckCdMed;
+  src: url("./../fonts/ATTAleckCd_Md.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: aleck;
-  font-style: normal;
-  font-weight: 200;
-  src: url("./../fonts/attalecksans_lt.woff") format("woff"), url("./../fonts/attalecksans_lt.ttf") format("truetype");
+  font-family: aleckSansLight;
+  src: url("./../fonts/ATTAleckSans_Lt.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: aleck;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./../fonts/attalecksans_rg.woff") format("woff"), url("./../fonts/attalecksans_rg.ttf") format("truetype");
+  font-family: aleckSans;
+  src: url("./../fonts/ATTAleckSans_Rg.ttf") format("truetype");
 }
 
 @font-face {
   font-family: aleck;
-  font-style: normal;
-  font-weight: 500;
-  src: url("./../fonts/attalecksans_md.woff") format("woff"), url("./../fonts/attalecksans_md.ttf") format("truetype");
+  src: url("./../fonts/ATTAleckSans_Rg.ttf") format("truetype");
+  }
+
+@font-face {
+  font-family: aleckSansMed;
+  src: url("./../fonts/ATTAleckSans_Md.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: aleck;
-  font-style: normal;
-  font-weight: 700;
-  src: url("./../fonts/attalecksans_bd.woff") format("woff"), url("./../fonts/attalecksans_bd.ttf") format("truetype");
+  font-family: aleckSansBold;
+  src: url("./../fonts/ATTAleckSans_Bd.ttf") format("truetype");
 }
 
-$font-aleckcd: 'aleckcd', Helvetica, Arial, sans-serif;
-$font-aleck: 'aleck', Helvetica, Arial, sans-serif;
-$font-aleck-bold: 'attalecksans_bd', Helvetica, sans-serif;
+@font-face {
+  font-family: aleckSansBdLt;
+  src: url("./../fonts/ATTAleckSans_BdIt.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: aleckSansBlkLt;
+  src: url("./../fonts/ATTAleckSans_BlkIt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: aleckSansBlk;
+  src: url("./../fonts/ATTAleckSans_Blk.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: aleckCmp;
+  src: url("./../fonts/ATTAleckCmp_Md.ttf") format("truetype");
+}
+
+$font-aleckcd: aleckCdMed, Helvetica, Arial, sans-serif;
+$aleckCdLight: aleckCdLight, Helvetica, Arial, sans-serif;
+$aleckSansLight: aleckSansLight, Helvetica, Arial, sans-serif;
+$aleckSansMed: aleckSansMed, Helvetica, Arial, sans-serif;
+$font-aleck: aleck, Helvetica, Arial, sans-serif;
+$font-aleck-bold: aleckSansBold, Helvetica, sans-serif;
+$fontAleckBoldLt: aleckSansBdLt, Helvetica, sans-serif;
+$fontAleckBlk: aleckSansBlk, Helvetica, sans-serif;
+$fontAleckBlkLt: aleckSansBlkLt, Helvetica, sans-serif;
+$aleckCmp: aleckCmp, Helvetica, sans-serif;
 
 h1,
 h2,
@@ -53,16 +74,25 @@ h6,
 p {
   margin: 0;
   padding: 0;
+
+  &.thin {
+    font-family: $aleckSansLight;
+    font-weight: 200;
+  }
+
+  &.bold {
+    font-family: $font-aleck-bold;
+    font-weight: 500;
+  }
+
 }
 
 body {
   font-family: $font-aleck;
-
 }
 
 h1,
 .h1 {
-  font-family: $font-aleck;
   font-size: 32px;
   // font-weight: 500;
   line-height: 32px;
