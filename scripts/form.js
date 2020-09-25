@@ -35,12 +35,40 @@ $('form').on('submit', e => {
   console.log('form submission: ', $(e.target).serialize())
 })
 
+// installOptions.on('change', (e) => {
+//   const input = installOptions.find('[type="radio"]:checked');
+
+//   $('.install-option').removeClass('border-blue-light');
+
+//   input.closest('.install-option').toggleClass('border-blue-light')
+
+// });
+
 installOptions.on('change', (e) => {
   const input = installOptions.find('[type="radio"]:checked');
+  const inputName = $(e.currentTarget).find('input')[0].name
+  const currentOptions = installOptions.find(`[name=${inputName}]`);
 
   $('.install-option').removeClass('border-blue-light');
 
-  input.closest('.install-option').toggleClass('border-blue-light')
+  input.closest('.install-option').addClass('border-blue-light')
+
+  // BY DEFAULT ALL OPTIONS WILL HAVE OPACITY OF 1;
+  // ON SELECT, INPUTS WITH THE SAME NAME WILL HAVE OPACITY OF .6;
+  currentOptions.each((i, el) => {
+
+    const option = $(el).closest('.install-option');
+    option.removeClass('is-selected')
+    option.removeClass('not-selected')
+
+    if (option.hasClass('border-blue-light')) {
+      option.addClass('is-selected')
+    } else {
+      option.addClass('not-selected')
+    }
+
+  })
+
 
 });
 
