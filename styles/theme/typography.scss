@@ -75,20 +75,20 @@ p {
   margin: 0;
   padding: 0;
 
-  &.thin {
-    font-family: $aleckSansLight;
-    font-weight: 200;
-  }
-
-  &.bold {
-    font-family: $font-aleck-bold;
-    font-weight: 500;
-  }
 
 }
 
 body {
   font-family: $font-aleck;
+    .thin {
+      font-family: $aleckSansLight;
+      font-weight: 200;
+    }
+
+    .bold {
+      font-family: $font-aleck-bold;
+      font-weight: 500;
+    }
 }
 
 h1,
