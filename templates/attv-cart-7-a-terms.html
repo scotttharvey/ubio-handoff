@@ -1,0 +1,212 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+<script src="./../index.js"></script>
+
+<!-- SCREEN 5-A -->
+<div class="container row w-100 bg-white">
+  <section class="w-100 bg-white p-y-15 p-x-35 sm:p-x-15 flex space-between">
+    <p class="text-18 icon lock">Secure Checkout</p>
+    <p class="blue-light">Back to Cart</p>
+  </section>
+</div>
+
+<div class="container bg-gray-light">
+  <div id="screen-7" class="row p-y-30 sm:p-y-15">
+    <section class="flex w-100 flex-wrap sm:flex-column">
+
+      <div class="w-66 sm:w-100 p-y-25 sm:p-x-15 sm:p-t-0 content">
+        <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
+
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px -m-t-3 " src="./../images/icons/check-blue.svg" alt="" />
+            <p class="text-18 sm:text-14 p-l-10">Promotions & Fees</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px -m-t-3 " src="./../images/icons/check-blue.svg" alt="" />
+            <p class="text-18 sm:text-14 p-l-10">Personal Information & Credit Check</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px -m-t-3" src="./../images/icons/check-blue.svg" alt="" />
+            <p class="text-18 sm:text-14 p-l-10">Account Setup</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15">
+          <div class="flex flex-row space-between w-100 m-b-15">
+            <p class="text-20">Terms and Conditions</p>
+            <p class="text-18 gray">Step 3 of 6</p>
+          </div>
+
+          <p class="text-20 bold gray-dead border-bottom-gray p-b-10 m-b-15">
+            For AT&T Internet
+          </p>
+          <p class="text-16 bold p-b-10 gray-dead">Installation</p>
+          <p class="text-14 m-b-10 gray-darkest">Someone 18 years of age or older must be present when the technician arrives. The installation averages 2 -
+            4 hours, but can vary. Please make all connections for your TV and computers visible. If you are switching
+            from another Cable or Satellite TV provider to DIRECTV/AT&T, please do not disconnect service until after
+            your installation. Please make all connections for your TV and computers visible.
+          </p>
+          <p class="text-14 m-b-15 gray-darkest">
+            Renters: Rental properties require signed permission slip from the landlord. Please obtain permission from
+            your property owner or manager, to allow AT&T to perform the necessary wiring to complete your installation.
+          </p>
+          <p class="bold p-b-5 gray-darkest">General</p>
+          <p class="text-14 m-b-15 gray-darkest">Pricing, programming, and features subject to change at any time without notice.</p>
+          <p class="bold p-b-5 gray-darkest">All Internet Offers</p>
+          <p class="text-14 p-b-35 gray-darkest">Pricing, programming, and features subject to change at any time without notice.</p>
+
+          <p class="text-20 bold gray-dead border-bottom-gray p-b-10 m-b-15">
+            For AT&T TV
+          </p>
+          <p class="text-16 bold p-b-10 gray-dead">AT&T TV Terms & Conditions and Video Apps Privacy Policy</p>
+          <p class="text-14 m-b-15 gray-darkest">Inform the customer that he/she must accept the AT&T TV Terms and Conditions, Video Apps Privacy Policy, Device Terms of Use, and Device Privacy Policy the first time they log into the app and set up their AT&T device.</p>
+          <p class="text-16 bold p-b-10 gray-dead">Term Commitment and Automatic Payments</p>
+          <p class="text-14 m-b-10 gray-darkest">You are entering into a new 24-month service agreement.</p>
+          <p class="text-14 m-b-10 gray-darkest">AT&T TV is auto-charged in advance monthly to your payment method on your account. You will not receive a
+            monthly bill. You can view your account information and payment activity online at myATT.com by logging in with your User 10 and Password.</p>
+          <p class="text-14 m-b-10 gray-darkest">Your first auto-charged payment will occur when AT&T TV service is activated on your TV, or on 8/21/2020, which
+            ever comes first. We'll charge your monthly payments on the same date every month unless your 1st payment is on the 29th through 31st of a given month, in which case we will charge your payment method on the first day of each
+            following month. You authorize AT&T to automatically charge all monthly payments to the card on your account.</p>
+
+        <form class="terms-conditions">
+            <div class="w-100 p-y-25 md-down:p-b-45 border-top-gray-dark relative ">
+              <label for="consent" class="checkbox">
+                <input type="checkbox" id="consent" data-parsley-required-message="You must check this box in order to continue with your order." name="consent" required class="consent m-r-15 m-0" />
+                <span class="blue-dark" tabindex="-1">I agree to the terms and conditions listed above.</span>
+              </label>
+            </div>
+
+            <p class="underlined pointer" data-modal-trigger="attTvTerms">Read the AT&T TV Disclosures</p>
+            <!-- Start modal content -->
+            <div data-modal-content="attTvTerms" class="modal hidden sm:p-x-15 is-active">
+              <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                <div class="w-100 text-right">
+                  <span data-modal-trigger="close" class="close -m-t-10">&#10005;</span>
+                </div>
+                <div class="p-y-30 scrollable-content">
+                  <p class="text-24 p-b-25 thin">AT&T TV Disclosures</p>
+                  <div>
+                    <p class="p-r-15 text-14">AT&T TV is available in the U.S. only (excludes Puerto Rico and U.S. Virgin Islands) and requires high speed internet.<br/><br/>
+                      AT&T TV requires high speed internet. AT&T recommends a minimum of 8Mbps per stream for optimal
+                      viewing. AT&T recommends having internet speeds of 25Mbps or higher for optimal viewing on up to 3 concurrent AT&T streams<br/><br/>
+                      AT&T TV service will continue monthly at the prevailing rate automatically charged to your payment method on file. <strong>Taxes may apply.</strong><br/><br/>
+                      <strong>Cancellation:</strong> If you cancel before month 24 you agree to pay $15/mo. for each remaining month on your agreement. Upon cancellation you can access AT&T TV through the end of your bill cycle. No refunds or credits for any partial-month periods or unwatched content.<br/><br/>
+                      <strong>Pricing, channels, features, and terms subject to change & may be modified or discontinued at any
+                        time without notice.</strong> Programming subject to blackout restrictions. See your Order Confirmation for more details.<br/><br/>
+                      <strong>Regional Sports & Local Channels</strong> are not available in select areas. Channels vary by package & billing
+                      region. Device may need to be in billing region to view.<br/><br/>
+                      You can make changes to your account or cancel service by calling 800-288-2020<br/><br/>
+                      <strong>Reward Card Redemption:</strong> Congratulations on your reward! Within 6 weeks of service activation, you'll receive notification via email or letter on how to claim your reward. To check status, contact the AT&T Reward Center at 877-258-1427. Allow 6 weeks after service activation before calling.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End modal content -->
+
+            <div class="w-100 p-y-25 md-down:p-b-45 relative ">
+              <label for="termsConditions" class="checkbox">
+                <input type="checkbox" id="termsConditions" data-parsley-required-message="You must check this box in order to continue with your order." name="termsConditions" required class="consent m-r-15 m-0" />
+                <span class="blue-dark" tabindex="-1">I agree to the terms and conditions listed above.</span>
+              </label>
+            </div>
+
+            <p class="underlined pointer" data-modal-trigger="customer-agreement">Read the Consent to Electronic Delivery of Disclosures</p>
+            <!-- Start modal content -->
+            <div data-modal-content="customer-agreement" class="modal hidden sm:p-x-15 is-active">
+              <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                <div class="w-100 text-right">
+                  <span data-modal-trigger="close" class="close">&#10005;</span>
+                </div>
+                <div class="text-center p-y-30">
+                  <iframe seamless="seamless" frameborder="0" height="400" src="https://www.att.com/legal/terms.internetAttTermsOfService.html#termsofservices" class="w-100"/>
+                </div>
+              </div>
+            </div>
+            <!-- End modal content -->
+
+            <div class="w-100 p-y-25 md-down:p-b-45 border-top-gray-dark relative ">
+              <label for="consent" class="checkbox">
+                <input type="checkbox" id="consent" data-parsley-required-message="You must check this box in order to continue with your order." name="consent" required class="consent m-r-15 m-0" />
+                <span class="blue-dark" tabindex="-1">I agree to the terms and conditions listed above.</span>
+              </label>
+            </div>
+
+            <p class="underlined pointer" data-modal-trigger="customer-dtv-agreement">Read the AT&T TV RIA Agreement</p>
+            <!-- Start modal content -->
+            <div data-modal-content="customer-agreement" class="modal hidden sm:p-x-15 is-active">
+              <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                <div class="w-100 text-right">
+                  <span data-modal-trigger="close" class="close">&#10005;</span>
+                </div>
+                <div class="text-center p-y-30">
+                  <iframe seamless="seamless" frameborder="0" height="400" src="https://www.att.com/legal/terms.dtv_residentialCustomerAgreement.html#termsofservices" class="w-100"/>
+                </div>
+              </div>
+            </div>
+            <!-- End modal content -->
+
+            <div class="w-100 p-y-25 md-down:p-b-45 relative ">
+              <label for="consent" class="checkbox">
+                <input type="checkbox" id="consent" data-parsley-required-message="You must check this box in order to continue with your order." name="consent" required class="consent m-r-15 m-0" />
+                <span class="blue-dark" tabindex="-1">I agree to the terms and conditions listed above.</span>
+              </label>
+            </div>
+
+            <div class="w-100 p-t-0 p-b-25 md-down:p-b-45 relative ">
+              <label for="customerDtvAgreement" class="checkbox">
+                <input type="checkbox" id="customerDtvAgreement" data-parsley-required-message="You must check this box in order to continue with your order." name="customerDtvAgreement" required class="consent m-r-15 m-0" />
+                <span class="blue-dark" tabindex="-1">I have read and agreed to the DIRECTV Customer Agreement and the included provisions for binding individual arbitration.</span>
+              </label>
+            </div>
+
+            <div class="p-t-25"></div>
+
+            <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+              <button type="submit" class="btn bg-blue-dark white p-x-65 p-y-8 block m-l-auto disabled" >Next</button>
+            </div>
+
+          </form>
+
+        </section>
+      </div>
+
+      <!-- COST SECTION -->
+      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 content">
+        <p class="text-24 thin p-b-25 sm:p-b-10">Cost</p>
+        <section>
+          <div class="w-100 bg-white p-25 sm:p-x-15 m-b-25">
+            <div class="bg-gray-lightest h-35px w-40 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-25px w-25 m-b-10 m-l-auto"></div>
+            <br/>
+            <div class="bg-gray-lightest h-35px w-40 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-25px w-25 m-b-10 m-l-auto"></div>
+
+          </div>
+        </section>
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="sm:p-y-15"></div>
+
+
+<script type="text/javascript" src="../scripts/modal.js"></script>
+<script type="text/javascript" src="../scripts/form.js"></script>
