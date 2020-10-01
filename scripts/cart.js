@@ -12,7 +12,7 @@ cart.addEventListener("click", () => {
 })
 
 fixNav = () => {
-  if (window.scrollY >= topOfNav && window.outerWidth <= 640) {
+  if (window.scrollY >= topOfNav && window.innerWidth <= 640) {
     document.body.style.paddingTop = cartNav.offsetHeight + 'px';
     document.body.classList.add('fixed-nav');
   } else {
