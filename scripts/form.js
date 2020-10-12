@@ -1,6 +1,7 @@
 import $ from "jquery";
 import parsley from 'parsleyjs'
 const installOptions = $('.install-option');
+const promoOptions = $('.promo-option');
 const idOptions = $('.id-option');
 const deviceCard = $('.device-card');
 const scrollOnSmall = $('.fixed-submit button');
@@ -81,6 +82,12 @@ idOptions.on('change', (e) => {
   input.closest('.id-option').find('.id-form').toggleClass('hidden')
   input.closest('.id-option').toggleClass('border-blue-light');
 
+});
+
+promoOptions.on('change', (e) => {
+  let promo = e.currentTarget.classList;
+  console.log(promo);
+  promo.toggle('border-blue-light-2');
 });
 
 // Other ID section

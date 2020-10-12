@@ -37,6 +37,12 @@
     color: inherit;
   }
 
+  &.promo-container {
+    p {
+      color: unset;
+    }
+  }
+
   &.bg-blue-dark {
     p {
       color: $white;
