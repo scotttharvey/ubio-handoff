@@ -1,0 +1,480 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+<!-- SCREEN 5-A -->
+<div class="container row w-100 bg-white">
+  <section class="w-100 bg-white p-y-15 content flex space-between">
+    <p class="text-18 icon lock">Secure Checkout</p>
+    <p class="blue-light">Back to Cart</p>
+  </section>
+</div>
+
+<div class="container bg-gray-light">
+  <div id="screen-5" class="row p-y-30 sm:p-y-15">
+    <section class="flex w-100 flex-wrap sm:flex-column">
+
+      <div class="w-66 sm:w-100 p-y-25 sm:p-t-0 content">
+        <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
+        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
+
+        <section class="bg-white p-25 sm:p-x-15">
+          <div class="w-100 m-b-15 flex space-between">
+            <p class="text-18">Personal information</p>
+            <p class="gray">Step 1 of 5</p>
+          </div>
+          <form action="" class="flex flex-wrap form-container">
+            <div class="name-container flex w-100 sm:flex-column">
+              <div class="w-33 md-down:w-50 sm:w-100  m-r-25 sm:p-0">
+                <label for="firstname">
+                  First name*
+                </label>
+                <input id="firstname" name="firstname" type="text" required />
+              </div>
+              <div class="w-33 md-down:w-50 sm:w-100">
+                <label for="lastname">
+                  Last name*
+                </label>
+                <input id="lastname" name="lastname" type="text" required />
+              </div>
+            </div>
+
+            <div class="contact flex flex-wrap w-100 p-b-15">
+              <div class="w-33 sm:w-100 m-r-25 sm:m-0">
+                <label for="phone">
+                  Phone*
+                </label>
+                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
+              </div>
+
+              <div class="w-60 sm:w-100">
+                <label for="email">
+                  Email*
+                </label>
+                <input id="email" name="email" type="email" required data-parsley-required-message="Email is required" data-parsley-pattern-message="Please enter valid email" data-parsley-pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" />
+              </div>
+            </div>
+
+            <div class="w-100 flex flex-start flex-column checkbox-container p-b-25">
+              <label for="consent" class="checkbox" >
+                <input type="checkbox" id="consent" name="consent" value="Consent" class="consent m-r-15 m-0" required />
+                <span class="blue-dark" tabindex="-1">By checking this box, you authorize AT&T to reach you by phone or text with information about your AT&T services. Examples include install and repair appointment, billing and account information, and customer satisfaction inquiries. Standard rates may apply.</span>
+              </label>
+            </div>
+
+            <div class="creditcheck border-blue-light p-t-25 p-b-10 p-x-20 sm:p-x-15 flex flex-column w-100">
+              <p class="text-18 thin m-b-15 icon lock">Credit Check</p>
+              <p class="text-14 thin m-b-15">To determine service eligibility for internet service, and to complete your order, we will initiate a credit check with a credit bureau or use your existing credit information on file with other AT&T companies.</p>
+
+              <section class="ssn-section id-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-25">
+
+                <div class="w-25 md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section">
+                  <div class="radio-container w-25 md-down:w-100">
+                    <label for="ssnRadio" class="big-radio" >
+                      <input type="radio" id="ssnRadio" name="idMethod" value="Professional Install" class="ssnRadio m-r-15 m-0" required  data-parsley-required-message="SSN and Birthday required" data-parsley-errors-container="#idMethodError" />
+                      <span class="inputFill"></span>
+                    </label>
+                  </div>
+
+                  <div class="w-70 md-down:w-100">
+                    <img src="/images/icons/ssn-shield.svg" alt="" class="max-w-120"/>
+                  </div>
+                </div>
+
+                <div class="w-75 md-down:w-100 flex space-between flex-wrap p-l-10 md-down:p-0">
+                  <div>
+                    <div class="flex space-between">
+                      <p class="text-18 thin blue-dark p-b-15">Use my social security number (SSN)</p>
+                      <p class="text-18 thin text-right -m-t-5 lg-up:hidden">Preferred</p>
+                    </div>
+                  </div>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-18 thin">Preferred</p>
+                  </div>
+                  <div class="w-100">
+                    <p class="text-14 gray-dead thin p-r-15">AT&T will be able to retrieve the most accurate credit report and give you the best online shopping experience with this secured option.</p>
+                  </div>
+                </div>
+
+                <div class="id-form w-100 hidden">
+                  <div class="ssn-form w-100 flex flex-wrap p-t-25 p-l-45">
+                    <div class="w-33 md-down:w-100">
+                      <label for="SSN">
+                        SSN*
+                      </label>
+                      <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+                      <input id="SSN-mask" placeholder="000-00-0000" class="hidden SSN-mask" />
+                      <div id="ssnError"></div>
+                    </div>
+
+                    <div class="w-40 md-down:w-100 p-l-25 md-down:p-0">
+                      <label for="birthday">
+                        Date of Birth*
+                      </label>
+                      <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                      <input id="birthday-mask" placeholder="MM/DD/YYYY" class="hidden birthday-mask" />
+                      <div id="birthdayError"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+
+              <section class="other-id-section id-option border-white w-100 flex flex-wrap md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-30">
+
+                <div class="w-40px md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section m-r-10">
+                  <div class="radio-container w-25 md-down:w-100">
+                    <label for="otherID" class="big-radio" >
+                      <input type="radio" id="otherID" name="idMethod" value="Professional Install" class="otherID m-r-15 m-0" required  data-parsley-required-message="Other ID required" data-parsley-errors-container="#idMethodError" />
+                      <span class="inputFill"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="flex-1 md-down:w-100 flex space-between flex-wrap p-l-10 md-down:p-0">
+                  <div>
+                    <div class="flex space-between">
+                      <p class="text-18 thin blue p-b-15">Use my driver’s license or other forms of ID</p>
+                      <p class="text-18 thin text-right -m-t-5 lg-up:hidden">Less preferred</p>
+                    </div>
+                  </div>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-18 thin">Less preferred</p>
+                  </div>
+                  <div class="w-100">
+                    <p class="text-14 gray-dead thin p-r-15">AT&T might require a specialist to review this order and your credit report. You might not be able to complete this order online.</p>
+                  </div>
+                </div>
+
+                <div class="id-form w-100 hidden">
+                  <div class="other-id-form w-100 flex flex-wrap p-t-25 p-l-55">
+                    <div class="select-type w-50 md-down:w-100">
+                      <label for="idType">
+                        Type of ID*
+                      </label>
+                      <select name="idType" id="idType" class="idType dropdown w-100">
+                        <option value="driver">Driver's License</option>
+                        <option value="state">State Issued ID</option>
+                        <option value="military">Military ID</option>
+                        <option value="passport">US Passport</option>
+                        <option value="foreign">Foreign Government ID</option>
+                      </select>
+                    </div>
+
+                    <div class="multi-option w-50 md-down:w-100 p-l-25 md-down:p-0">
+                      <div class="driver option-val w-100">
+                        <label for="state">
+                          State*
+                        </label>
+                        <select name="state" id="state" class="state dropdown w-100">
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                        </select>
+                      </div>
+                      <div class="state option-val w-100">
+                        <label for="state">
+                          State*
+                        </label>
+                        <select name="state" id="state" class="state dropdown w-100">
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                          <option value="utah">UT</option>
+                        </select>
+                      </div>
+                      <div class="military option-val w-100">
+                        <!-- No Val -->
+                      </div>
+                      <div class="passport option-val w-100">
+                        <!-- NO Val -->
+                      </div>
+                      <div class="foreign option-val w-100">
+                        <label for="country">
+                          Country*
+                        </label>
+                        <select name="country" id="country" class="country dropdown w-100">
+                          <option value="USA">USA</option>
+                          <option value="USA">USA</option>
+                          <option value="USA">USA</option>
+                          <option value="USA">USA</option>
+                          <option value="USA">USA</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="multi-option w-50 md-down:w-100">
+                      <div class="driver option-val w-100">
+                        <label for="idNumber">
+                          ID Number*
+                        </label>
+                        <input type="text" id="idNumber" maxlength="15" />
+                      </div>
+                      <div class="state option-val w-100">
+                        <label for="idNumber">
+                          ID Number*
+                        </label>
+                        <input type="text" id="idNumber" maxlength="15" />
+                      </div>
+                      <div class="military option-val w-100">
+                        <label for="idNumber">
+                          ID Number*
+                        </label>
+                        <input type="text" id="idNumber" maxlength="15" />
+                      </div>
+                      <div class="passport option-val w-100">
+                        <label for="idNumber">
+                          ID Number*
+                        </label>
+                        <input type="text" id="idNumber" maxlength="15" />
+                      </div>
+                      <div class="foreign option-val w-100">
+                        <label for="idNumber">
+                          ID Number*
+                        </label>
+                        <input type="text" id="idNumber" maxlength="15" />
+                      </div>
+                    </div>
+
+                    <div class="multi-option w-50 md-down:w-100 p-l-25 md-down:p-0">
+                      <div class="driver option-val w-100">
+                        <label for="expirationDate">
+                          Expiration Date*
+                        </label>
+                        <input id="expirationDate" name="Expiration Date" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Expiration Date is required" data-parsley-pattern-message="Please enter valid Expiration Date" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                      </div>
+                      <div class="state option-val w-100">
+                        <label for="expirationDate">
+                          Expiration Date*
+                        </label>
+                        <input id="expirationDate" name="Expiration Date" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Expiration Date is required" data-parsley-pattern-message="Please enter valid Expiration Date" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                      </div>
+                      <div class="military option-val w-100">
+                        <label for="expirationDate">
+                          Expiration Date*
+                        </label>
+                        <input id="expirationDate" name="Expiration Date" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Expiration Date is required" data-parsley-pattern-message="Please enter valid Expiration Date" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                      </div>
+                      <div class="passport option-val w-100">
+                        <label for="expirationDate">
+                          Expiration Date*
+                        </label>
+                        <input id="expirationDate" name="Expiration Date" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Expiration Date is required" data-parsley-pattern-message="Please enter valid Expiration Date" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                      </div>
+                      <div class="foreign option-val w-100">
+                        <label for="expirationDate">
+                          Expiration Date*
+                        </label>
+                        <input id="expirationDate" name="Expiration Date" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Expiration Date is required" data-parsley-pattern-message="Please enter valid Expiration Date" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+
+              <div class="w-100 flex flex-start flex-column checkbox-container p-b-10">
+                <label for="sameAddress" class="checkbox flex flex-start" >
+                  <input type="checkbox" id="sameAddress" name="sameAddress" value="sameAddress" class="consent" />
+                  <span class="gray-dead" tabindex="-1">Use same address as service address as billing address</span>
+                </label>
+              </div>
+
+              <div class="billingAddress w-100 p-b-15">
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-66 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="billingAddress">
+                      Billing Address*
+                    </label>
+                    <input id="billingAddress" name="billingAddress" type="text" required />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="addressType">
+                      Apt./Suite/Bldg.
+                    </label>
+                    <input id="addressType" name="addressType" type="text" required />
+                  </div>
+                </div>
+
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="city">
+                      City*
+                    </label>
+                    <input id="city" name="city" type="text" required />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="state">
+                      State*
+                    </label>
+                    <select name="state" id="state" class="w-100 dropdown" required>
+                      <option value="test">Test Val 1</option>
+                      <option value="test">Test Val 2</option>
+                      <option value="test">Test Val 3</option>
+                      <option value="test">Test Val 4</option>
+                      <option value="test">Test Val 5</option>
+                    </select>
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="zip">
+                      Zipcode*
+                    </label>
+                    <input id="address-zip" name="zip" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
+                <div class="m-t-3 md-down:hidden">
+                  <img src="./../images/icons/card-blue.svg" alt="" class="w-25px h-25px"/>
+                </div>
+                <div class="m-l-10">
+                  <p class="text-24 thin p-b-10">Before you proceed—make sure your zip codes match.</p>
+                  <p class="text-14 p-b-10">You’re almost done! If the results of your credit check require an advanced payment, just make sure your billing zip code above is the same as your credit card’s billing zip code.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex flex-end w-100 p-t-25">
+
+              <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-65 disabled" data-modal-trigger="more-info" >Next</button>
+              </div>
+
+              <!-- Start Credit Modal content -->
+              <div data-modal-content="more-info" class="modal sm:p-x-15 is-active">
+                <div class="modal-content w-100 p-25 sm:p-x-15">
+                  <div class="text-center p-t-25 p-b-15 p-x-15">
+                      <p class="text-24 thin p-b-10">Based on your credit report, we’ll need additional validation.</p>
+                      <p class="p-b-25 m-auto text-14">Please provide answers for each of the questions below. </p>
+                    <form>
+                      <div class="additional-info-container w-100 flex flex-column text-left">
+                        <div class="street-lived additional-info w-100 m-b-10">
+                          <label for="street-lived">
+                            On which of the following streets have you lived?
+                          </label>
+                          <select name="street-lived" id="streetLived" class="dropdown w-100 text-16 error-left" required data-parsley-required-message="This field is required">
+                            <option value="" class="p-y-5">-Please Select-</option>
+                            <option value="utah" class="p-y-5">14 Cherry Ln.</option>
+                            <option value="utah" class="p-y-5">Ocean Ave</option>
+                            <option value="utah" class="p-y-5">Mr. Brightside Rd.</option>
+                            <option value="utah" class="p-y-5">90 S. Strawberry Fields</option>
+                            <option value="utah" class="p-y-5">521 Linkin Park</option>
+                          </select>
+                        </div>
+                        <div class="city-lived additional-info w-100 m-b-10">
+                          <label for="city-lived">
+                            On which of the following cities have you lived?
+                          </label>
+                          <select name="city-lived" id="cityLived" class="dropdown w-100 text-16 error-left" required data-parsley-required-message="This field is required">
+                            <option value="" class="p-y-5">-Please Select-</option>
+                            <option value="Fillmore City" class="p-y-5">Fillmore City</option>
+                            <option value="Park City" class="p-y-5">Park City</option>
+                            <option value="Happy Valley City" class="p-y-5">Happy Valley City</option>
+                            <option value="Salt Lake City" class="p-y-5">Salt Lake City</option>
+                            <option value="Layton City" class="p-y-5">Layton City</option>
+                          </select>
+                        </div>
+                        <div class="county-country-lived additional-info w-100 m-b-10">
+                          <label for="county-country-lived">
+                            In which of the following counties or county equivalent (Borough, Parish, etc.) have you lived?
+                          </label>
+                          <select name="county-country-lived" id="countyCountryLived" class="dropdown w-100 text-16 error-left" required data-parsley-required-message="This field is required">
+                            <option value="" class="p-y-5">-Please Select-</option>
+                            <option value="Davis" class="p-y-5">Davis</option>
+                            <option value="Weber" class="p-y-5">Weber</option>
+                            <option value="Cache" class="p-y-5">Cache</option>
+                            <option value="Willard" class="p-y-5">Willard</option>
+                            <option value="Richmond" class="p-y-5">Richmond</option>
+                          </select>
+                        </div>
+                        <div class="current-prev-number additional-info w-100">
+                          <label for="current-prev-number">
+                            Which of the following is either your current or your previous telephone number?
+                          </label>
+                          <select name="current-prev-number" id="currentPrevNumber" class="dropdown w-100 text-16 error-left" required data-parsley-required-message="This field is required">
+                            <option value="" class="p-y-5">-Please Select-</option>
+                            <option value="(###)###-####" class="p-y-5">(###)###-####</option>
+                            <option value="(###)###-####" class="p-y-5">(###)###-####</option>
+                            <option value="(###)###-####" class="p-y-5">(###)###-####</option>
+                            <option value="(###)###-####" class="p-y-5">(###)###-####</option>
+                            <option value="(###)###-####" class="p-y-5">(###)###-####</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="flex flex-end w-100 sm:w-100 p-t-15">
+                        <button class="btn m-r-0 bg-blue-dark white p-y-8 p-x-25 no-wrap border-0 " data-modal-trigger="clos e">Validate Answers</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            <!-- End Credit Modal content -->
+            </div>
+
+          </form>
+        </section>
+      </div>
+
+      <!-- COST SECTION -->
+      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 content">
+        <p class="text-24 thin p-b-25 sm:p-b-10">Cost</p>
+
+        <section>
+          <div class="w-100 bg-white p-25 sm:p-x-15 m-b-25">
+            <div class="bg-gray-lightest h-35px w-40 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-25px w-25 m-b-10 m-l-auto"></div>
+            <br/>
+            <div class="bg-gray-lightest h-35px w-40 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-35px w-100 m-b-10"></div>
+            <div class="bg-gray-lightest h-25px w-25 m-b-10 m-l-auto"></div>
+
+          </div>
+        </section>
+
+        <!-- <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Monthly Cost</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">Internet 100</p>
+              <p class="text-14">$69.99</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Total</p>
+              <p class="text-18">$69.99</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Today's Charges</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">AT&T Internet Advanced Payment</p>
+              <p class="text-14">$100.00</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Due Today</p>
+              <p class="text-18">$100.00</p>
+            </div>
+          </div>
+        </section> -->
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="sm:p-y-15"></div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>

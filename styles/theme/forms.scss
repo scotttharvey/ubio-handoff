@@ -266,3 +266,23 @@
     }
   }
 }
+
+.error-left {
+  + .parsley-errors-list {
+    position: relative;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      position: absolute;
+      top: -15px;
+      left: 0;
+      color: red;
+      font-size: 14px;
+    }
+
+    li::before {
+      display: none;
+    }
+  }
+}
