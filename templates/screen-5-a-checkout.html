@@ -43,7 +43,7 @@
                 <label for="phone">
                   Phone*
                 </label>
-                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
+                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone is invalid" pattern="^\(?([2-9][0-8][0-9])\)?[-. ]?([2-9][0-9]{2})[-. ]?([0-9]{4})$" data-parsley-pattern="^\(?([2-9][0-8][0-9])\)?[-. ]?([2-9][0-9]{2})[-. ]?([0-9]{4})$" data-parsley-length-message="Phone must be 10 digits" />
               </div>
 
               <div class="w-60 sm:w-100">
